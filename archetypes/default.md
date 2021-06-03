@@ -1,6 +1,28 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
 draft: true
+author: "Dhananjay Tanpure"
+authorLink: "https://github.com/DTan13"
+description: ""
+
+tags: []
+categories: []
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+
+featuredImage: "/images/{{ replace .Name "_" "-" }}/featured-image.png"
+featuredImagePreview: "/images/{{ replace .Name "_" "-" }}/featured-image.png"
+
+toc:
+  enable: true
+math:
+  enable: false
+lightgallery: false
 ---
+<!-- Add Summary Here -->
+
+<!--more-->
 
