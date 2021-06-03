@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>DTan13</title>
+        <link>https://dtan13.github.io/</link>
+        <description>Just a Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>D13T@pm.me (DTan13)</managingEditor>
+            <webMaster>D13T@pm.me (DTan13)</webMaster><lastBuildDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</lastBuildDate>
+            <atom:link href="https://dtan13.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Exploring Markdown Syntax of LoveIt</title>
+    <link>https://dtan13.github.io/exploring-markdown-syntax/</link>
+    <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://dtan13.github.io/exploring-markdown-syntax/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/exploring-markdown-syntax/featured-image.png" referrerpolicy="no-referrer">
+            </div><p>This post is for exploring markdown syntax, built-in and extended shortcodes of LoveIt theme</p>]]></description>
+</item></channel>
+</rss>
