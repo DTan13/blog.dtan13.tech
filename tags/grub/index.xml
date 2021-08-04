@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Grub - Tag - DTan13</title>
+        <link>https://dtan13.github.io/tags/grub/</link>
+        <description>Grub - Tag - DTan13</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>D13T@pm.me (DTan13)</managingEditor>
+            <webMaster>D13T@pm.me (DTan13)</webMaster><lastBuildDate>Wed, 04 Aug 2021 22:43:02 &#43;0530</lastBuildDate><atom:link href="https://dtan13.github.io/tags/grub/" rel="self" type="application/rss+xml" /><item>
+    <title>Add Power Off and Reboot to Grub Menu</title>
+    <link>https://dtan13.github.io/add-poweroff-and-reboot-to-grub-menu/</link>
+    <pubDate>Wed, 04 Aug 2021 22:43:02 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://dtan13.github.io/add-poweroff-and-reboot-to-grub-menu/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/add-poweroff-and-reboot-to-grub-menu/featured-image.jpg" referrerpolicy="no-referrer">
+            </div><p>This post shows how to add <strong>Power Off</strong> and <strong>Reboot</strong> to grub menu.</p>]]></description>
+</item></channel>
+</rss>
