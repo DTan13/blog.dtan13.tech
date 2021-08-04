@@ -7,7 +7,7 @@ author: "Dhananjay Tanpure"
 authorLink: "https://github.com/DTan13"
 description: "Just Exploring!"
 
-tags: ["explore"]
+tags: ["Explore"]
 categories: ["Markdown"]
 
 hiddenFromHomePage: false
@@ -22,7 +22,7 @@ math:
   enable: false
 lightgallery: false
 ---
-This post is for exploring markdown syntax, built-in and extended shortcodes of LoveIt theme
+This post is for exploring markdown syntax, built-in and extended shortcodes of **LoveIt** theme.
 <!--more-->
 ---
 
