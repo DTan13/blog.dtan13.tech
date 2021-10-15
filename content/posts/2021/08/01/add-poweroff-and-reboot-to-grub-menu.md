@@ -7,24 +7,26 @@ author: "Dhananjay Tanpure"
 authorLink: "https://github.com/DTan13"
 description: "A Random Necessity!"
 
-tags: ["Linux","Grub"]
+tags: ["linux", "grub"]
 categories: ["Linux"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "/images/add-poweroff-and-reboot-to-grub-menu/featured-image.jpg"
-featuredImagePreview: "/images/add-poweroff-and-reboot-to-grub-menu/featured-image.jpg"
+featuredImage: "/images/2021/08/01/featured-image.jpg"
+featuredImagePreview: "/images/2021/08/01/featured-image.jpg"
 
 toc:
-  enable: true
+    enable: true
 math:
-  enable: false
+    enable: false
 lightgallery: false
 ---
+
 This post shows how to add **Power Off** and **Reboot** to grub menu.
-<!--more-->
----
+
+## <!--more-->
+
 ## Introduction
 
 To add **Power Off** and **Reboot** options to grub menu, you need to update a file in your grub configuration directory.
@@ -39,7 +41,7 @@ cd /etc/grub.d
 
 ### Open `40_custom` in your favorite editor
 
-For me its `micro`:
+For me its `micro` :
 
 <br>
 
@@ -65,7 +67,7 @@ menuentry "Power Off" {
 
 ```
 
-> Do not change the ```exec tail``` line in the file
+> Do not change the `exec tail` line in the file
 
 <br>
 
@@ -73,14 +75,14 @@ menuentry "Power Off" {
 
 <br>
 
-  - For Debian based distros
+-   For Debian based distros
 
-  ```bash 
-  update-grub
-  ```
+```bash
+update-grub
+```
 
-  - For Arch based and Other distros
+-   For Arch based and Other distros
 
-  ```bash
-  grub-mkconfig -o /boot/grub/grub.cfg
-  ```
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
