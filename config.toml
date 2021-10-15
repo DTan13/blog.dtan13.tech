@@ -63,7 +63,7 @@ gitRepo = "https://github.com/DTan13/DTan13.github.io"
 # ("sha256", "sha384", "sha512", "md5")
 # fingerprint = ""
 #  date format
-dateFormat = "02-Jan-2006"
+dateFormat = "01-Jan-2000"
 # website images for Open Graph and Twitter Cards
 # images = ["/logo.png"]
 
@@ -232,7 +232,7 @@ XMPP = ""
 Matrix = ""
 Bilibili = ""
 Email = "D13T@pm.me"
-RSS = true # 
+RSS = true                         # 
 
 #  Page config
 [params.page]
@@ -280,7 +280,7 @@ mhchem = true
 # whether to show the copy button of the code block
 copy = true
 # the maximum number of lines of displayed code by default
-maxShownLines = 13
+maxShownLines = 50
 #  social share links in post page
 [params.page.share]
 enable = true
