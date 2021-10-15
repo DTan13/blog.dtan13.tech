@@ -1,8 +1,10 @@
 # Add Power Off and Reboot to Grub Menu
 
+
 This post shows how to add **Power Off** and **Reboot** to grub menu.
-<!--more-->
----
+
+## <!--more-->
+
 ## Introduction
 
 To add **Power Off** and **Reboot** options to grub menu, you need to update a file in your grub configuration directory.
@@ -17,7 +19,7 @@ cd /etc/grub.d
 
 ### Open `40_custom` in your favorite editor
 
-For me its `micro`:
+For me its `micro` :
 
 <br>
 
@@ -43,7 +45,7 @@ menuentry "Power Off" {
 
 ```
 
-> Do not change the ```exec tail``` line in the file
+> Do not change the `exec tail` line in the file
 
 <br>
 
@@ -51,15 +53,15 @@ menuentry "Power Off" {
 
 <br>
 
-  - For Debian based distros
+-   For Debian based distros
 
-  ```bash 
-  update-grub
-  ```
+```bash
+update-grub
+```
 
-  - For Arch based and Other distros
+-   For Arch based and Other distros
 
-  ```bash
-  grub-mkconfig -o /boot/grub/grub.cfg
-  ```
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
