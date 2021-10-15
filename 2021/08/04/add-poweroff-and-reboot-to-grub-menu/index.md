@@ -3,7 +3,7 @@
 
 This post shows how to add **Power Off** and **Reboot** to grub menu.
 
-## <!--more-->
+<!--more-->
 
 ## Introduction
 

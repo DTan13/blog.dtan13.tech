@@ -42,7 +42,7 @@ You need to access your broken installation in order to fix it.
 3. Make sure to boot into UEFI mode.
 4. Boot into archlinux.
 5. Match the architecture of the system you are booted in with the system you wish to enter.
-    > `uname -a`
+    > `uname -r` Most probably this will be`x86_64`.
 6. Enable Swap if needed.
     > `swapon /path/to/swapfile`
 
@@ -87,7 +87,7 @@ In above output :
 ```bash
 /dev/sda2 #root filesystem(/)
 /dev/sda3 #home (/home)
-/dev/sda4 #EFI partition
+/dev/sda1 #EFI partition
 ```
 
 To properly mounting these partitions you need to know the type of partition, You can get this using `blkid` :
@@ -115,12 +115,13 @@ You can get type of partition in `TYPE` field.
 <br>
 
 -   Most important partition is root `/`.
+    > Here `-t` is the type of filesystem.
 
 ```bash
 mount -t ext4 /dev/sda2 /mnt
 ```
 
-> Here `-t` is the type of filesystem.
+<br>
 
 -   Mount `/home` if necessary
 
@@ -128,22 +129,30 @@ mount -t ext4 /dev/sda2 /mnt
 mount -t ext4 /dev/sda3 /mnt/home
 ```
 
+<br>
+
 -   Mount other required partitions.
     > These include virtual filesystems required for chroot to run
 
 ```bash
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do mount -B $i /mnt$i; done
 ```
+
+<br>
 
 -   If you want to update the GRUB, mount `/sys/firmware/efi/efivars`.
 
 ```
-mount --bind /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars
+mount -B /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars
 ```
+
+<br>
 
 -   If you've setup your network and want to use it in the chrooted system, copy over `/etc/resolv.conf` so that you'll be able to resolve domain names :
 
     > `cp -L /etc/resolv.conf /mnt/etc/resolv.conf`
+
+<br>
 
 After all required partitions are mounted you are free to chroot into your `/mnt` directory.
 

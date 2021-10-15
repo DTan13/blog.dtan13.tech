@@ -3,7 +3,7 @@
 
 This post is for exploring markdown syntax, built-in and extended shortcodes of **LoveIt** theme.
 
-## <!--more-->
+<!--more-->
 
 ## Introduction
 

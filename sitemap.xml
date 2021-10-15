@@ -2,18 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://dtan13.github.io/categories/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/chroot/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/error/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/grub/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/categories/linux/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/linux/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/posts/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/recovering-a-broken-linux-installation-with-arch-chroot/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/recovery/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/</loc><lastmod>2021-10-15T05:59:40&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/add-poweroff-and-reboot-to-grub-menu/</loc><lastmod>2021-10-15T05:58:15&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/tags/explore/</loc><lastmod>2021-10-15T05:58:15&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/exploring-markdown-syntax/</loc><lastmod>2021-10-15T05:58:15&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dtan13.github.io/categories/markdown/</loc><lastmod>2021-10-15T05:58:15&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>https://dtan13.github.io/categories/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/chroot/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/error/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/grub/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/categories/linux/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/linux/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/posts/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/recovery/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/tags/explore/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/2021/06/01/exploring-markdown-syntax/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dtan13.github.io/categories/markdown/</loc><lastmod>2021-10-15T22:38:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

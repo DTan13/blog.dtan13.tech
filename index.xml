@@ -8,33 +8,31 @@
             <atom:link href="https://dtan13.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Recovering a Broken Linux Installation With Chroot</title>
-    <link>https://dtan13.github.io/recovering-a-broken-linux-installation-with-arch-chroot/</link>
+    <link>https://dtan13.github.io/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
     <pubDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://dtan13.github.io/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
+    <guid>https://dtan13.github.io/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/02/featured-image.png" referrerpolicy="no-referrer">
             </div><!-- Add Summary Here -->
 <p>How to use <strong>chroot</strong> to recover broken linux installation.</p>]]></description>
 </item><item>
     <title>Add Power Off and Reboot to Grub Menu</title>
-    <link>https://dtan13.github.io/add-poweroff-and-reboot-to-grub-menu/</link>
+    <link>https://dtan13.github.io/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</link>
     <pubDate>Wed, 04 Aug 2021 22:43:02 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://dtan13.github.io/add-poweroff-and-reboot-to-grub-menu/</guid>
+    <guid>https://dtan13.github.io/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/01/featured-image.jpg" referrerpolicy="no-referrer">
-            </div><p>This post shows how to add <strong>Power Off</strong> and <strong>Reboot</strong> to grub menu.</p>
-<h2 id="heading"></h2>]]></description>
+            </div><p>This post shows how to add <strong>Power Off</strong> and <strong>Reboot</strong> to grub menu.</p>]]></description>
 </item><item>
     <title>Exploring Markdown Syntax of LoveIt</title>
-    <link>https://dtan13.github.io/exploring-markdown-syntax/</link>
+    <link>https://dtan13.github.io/2021/06/01/exploring-markdown-syntax/</link>
     <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://dtan13.github.io/exploring-markdown-syntax/</guid>
+    <guid>https://dtan13.github.io/2021/06/01/exploring-markdown-syntax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/06/01/featured-image.png" referrerpolicy="no-referrer">
-            </div><p>This post is for exploring markdown syntax, built-in and extended shortcodes of <strong>LoveIt</strong> theme.</p>
-<h2 id="heading"></h2>]]></description>
+            </div><p>This post is for exploring markdown syntax, built-in and extended shortcodes of <strong>LoveIt</strong> theme.</p>]]></description>
 </item></channel>
 </rss>
