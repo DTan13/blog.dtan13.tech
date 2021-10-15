@@ -12,403 +12,416 @@ enableGitInfo = true
 enableEmoji = true
 
 [menu]
-[[menu.main]]
-identifier = "posts"
-# you can add extra information before the name (HTML format is supported), such as icons
-# pre = "<i class='fas fa-file fa-fw'></i>"
-# you can add extra information after the name (HTML format is supported), such as icons
-post = ""
-name = "Posts"
-url = "/posts/"
-# title will be shown when you hover on this menu link
-title = "Blog Posts"
-weight = 1
-[[menu.main]]
-identifier = "tags"
-# pre = "<i class='fas fa-tag fa-fw'></i>"
-post = ""
-name = "Tags"
-url = "/tags/"
-title = "Tags"
-weight = 2
-[[menu.main]]
-identifier = "categories"
-# pre = "<i class='fas fa-list-alt fa-fw'></i>"
-post = ""
-name = "Categories"
-url = "/categories/"
-title = "Categories"
-weight = 3
-[[menu.main]]
-identifier = "github"
-pre = "<i class='fab fa-github fa-fw'></i>"
-post = ""
-name = ""
-url = "https://github.com/DTan13/DTan13.github.io"
-title = "GitHub"
-weight = 4
+    [[menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = "<i class='fas fa-file fa-fw'></i>"
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link
+        title = "Blog Posts"
+        weight = 1
+    [[menu.main]]
+        identifier = "tags"
+        pre = "<i class='fas fa-tag fa-fw'></i>"
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = "Tags"
+        weight = 2
+    [[menu.main]]
+        identifier = "categories"
+        pre = "<i class='fas fa-list-alt fa-fw'></i>"
+        post = ""
+        name = "Categories"
+        url = "/categories/"
+        title = "Categories"
+        weight = 3
+    [[menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/DTan13/DTan13.github.io"
+        title = "GitHub"
+        weight = 4
 
 [params]
-#  LoveIt theme version
-version = "0.2.X"
-# site description
-description = "Just a Blog"
-# site keywords
-keywords = ["DTan13", "Dhananjay", "Tanpure", "Dhananjay Tanpure"]
-# site default theme ("light", "dark", "auto")
-defaultTheme = "dark"
-# public git repo url only then enableGitInfo is true
-gitRepo = "https://github.com/DTan13/DTan13.github.io"
-#  which hash function used for SRI, when empty, no SRI is used
-# ("sha256", "sha384", "sha512", "md5")
-# fingerprint = ""
-#  date format
-dateFormat = "01-Jan-2000"
-# website images for Open Graph and Twitter Cards
-# images = ["/logo.png"]
+    #  LoveIt theme version
+    version = "0.2.X"
+    # site description
+    description = "Just a Blog"
+    # site keywords
+    keywords = ["DTan13", "Dhananjay", "Tanpure", "Dhananjay Tanpure"]
+    # site default theme ("light", "dark", "auto")
+    defaultTheme = "dark"
+    # public git repo url only then enableGitInfo is true
+    gitRepo = "https://github.com/DTan13/DTan13.github.io"
+    #  which hash function used for SRI, when empty, no SRI is used
+    # ("sha256", "sha384", "sha512", "md5")
+    # fingerprint = ""
+    #  date format
+    dateFormat = "02-Jan-2006"
+    # website images for Open Graph and Twitter Cards
+    # images = ["/logo.png"]
 
 #  App icon config
 [params.app]
-# optional site title override for the app when added to an iOS home screen or Android launcher
-title = "DTan13"
-# whether to omit favicon resource links
-noFavicon = false
-# modern SVG favicon to use in place of older style .png and .ico files
-# svgFavicon = ""
-# Android browser theme color
-themeColor = "#ffffff"
-# Safari mask icon color
-iconColor = "#5bbad5"
-# Windows v8-10 tile color
-tileColor = "#da532c"
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "DTan13"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    # svgFavicon = ""
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
 
 # Header config
 [params.header]
-# desktop header mode ("fixed", "normal", "auto")
-desktopMode = "fixed"
-# mobile header mode ("fixed", "normal", "auto")
-mobileMode = "auto"
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+
 #  Header title config
 [params.header.title]
-# URL of the LOGO
-# logo = "images/avatar.png"
-# title name
-name = "DTan13"
-# you can add extra information before the name (HTML format is supported), such as icons
-pre = ""
-# you can add extra information after the name (HTML format is supported), such as icons
-post = ""
-#  whether to use typeit animation for title name
-typeit = false
+    # URL of the LOGO
+    # logo = "images/avatar.png"
+    # title name
+    name = "DTan13"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = "<i class='fas fa-terminal'></i>"
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    #  whether to use typeit animation for title name
+    typeit = false
 
 # Footer config
 [params.footer]
-enable = true
-#  Custom content (HTML format is supported)
-custom = ''
-#  whether to show Hugo and theme info
-hugo = false
-#  whether to show copyright info
-copyright = true
-#  whether to show the author
-author = true
-# Site creation time
-since = 2021
-# ICP info only in China (HTML format is supported)
-icp = ""
-# license info (HTML format is supported)
-license = '<a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a>'
+    enable = true
+    #  Custom content (HTML format is supported)
+    custom = ''
+    #  whether to show Hugo and theme info
+    hugo = false
+    #  whether to show copyright info
+    copyright = true
+    #  whether to show the author
+    author = true
+    # Site creation time
+    since = 2021
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a>'
 
 #  Section (all posts) page config
 [params.section]
-# special amount of posts in each section page
-paginate = 20
-# date format (month and day)
-dateFormat = "01-02"
-# amount of RSS pages
-rss = 20
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 20
 
 #  List (category or tag) page config
 [params.list]
-# special amount of posts in each list page
-paginate = 20
-# date format (month and day)
-dateFormat = "01-02"
-# amount of RSS pages
-rss = 10
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
 
 # Home page config
 [params.home]
-#  amount of RSS pages
-rss = 10
+    #  amount of RSS pages
+    rss = 10
+
 # Home page profile
 [params.home.profile]
-enable = true
-# Gravatar Email for preferred avatar in home page
-# gravatarEmail = ""
-# URL of avatar shown in home page
-avatarURL = "/images/avatar.png"
-#  title shown in home page (HTML format is supported)
-title = "Dhananjay Tanpure"
-# subtitle shown in home page
-subtitle = "Exploring!"
-# whether to use typeit animation for subtitle
-typeit = true
-# whether to show social links
-social = true
-#  disclaimer (HTML format is supported)
-disclaimer = "<hr/>"
+    enable = true
+    # Gravatar Email for preferred avatar in home page
+    # gravatarEmail = ""
+    # URL of avatar shown in home page
+    avatarURL = "/images/avatar.png"
+    #  title shown in home page (HTML format is supported)
+    title = "Dhananjay Tanpure"
+    # subtitle shown in home page
+    subtitle = "Exploring!"
+    # whether to use typeit animation for subtitle
+    typeit = true
+    # whether to show social links
+    social = true
+    #  disclaimer (HTML format is supported)
+    disclaimer = "<hr/>"
+
 # Home page posts
 [params.home.posts]
-enable = true
-# special amount of posts in each home posts page
-paginate = 5
-#  replaced with hiddenFromHomePage in params.page
-# default behavior when you don't set "hiddenFromHomePage" in front matter
-# defaultHiddenFromHomePage = false
+    enable = true
+    # special amount of posts in each home posts page
+    paginate = 5
+    #  replaced with hiddenFromHomePage in params.page
+    # default behavior when you don't set "hiddenFromHomePage" in front matter
+    # defaultHiddenFromHomePage = false
 
 # Social config about the author
 [params.social]
-GitHub = "dtan13"
-Linkedin = "dtan13"
-Twitter = "_DTan13_"
-Instagram = "dtan.13"
-Facebook = ""
-Telegram = "DTan13"
-Medium = ""
-Gitlab = "_DTan13_"
-Youtubelegacy = ""
-Youtubecustom = ""
-Youtubechannel = ""
-Tumblr = ""
-Quora = ""
-Keybase = ""
-Pinterest = ""
-Reddit = "DTan13"
-Codepen = ""
-FreeCodeCamp = ""
-Bitbucket = ""
-Stackoverflow = "10990171"
-Weibo = ""
-Odnoklassniki = ""
-VK = ""
-Flickr = ""
-Xing = ""
-Snapchat = ""
-Soundcloud = ""
-Spotify = ""
-Bandcamp = ""
-Paypal = ""
-Fivehundredpx = ""
-Mix = ""
-Goodreads = ""
-Lastfm = ""
-Foursquare = ""
-Hackernews = ""
-Kickstarter = ""
-Patreon = "dtan13"
-Steam = ""
-Twitch = ""
-Strava = ""
-Skype = ""
-Whatsapp = ""
-Zhihu = ""
-Douban = ""
-Angellist = ""
-Slidershare = ""
-Jsfiddle = ""
-Deviantart = ""
-Behance = ""
-Dribbble = ""
-Wordpress = ""
-Vine = ""
-Googlescholar = ""
-Researchgate = "Dhananjay-Tanpure"
-Mastodon = ""
-Thingiverse = ""
-Devto = ""
-Gitea = ""
-XMPP = ""
-Matrix = ""
-Bilibili = ""
-Email = "D13T@pm.me"
-RSS = true                         # 
+    GitHub = "dtan13"
+    Linkedin = "dtan13"
+    Twitter = "_DTan13_"
+    Instagram = "dtan.13"
+    Facebook = ""
+    Telegram = "DTan13"
+    Medium = ""
+    Gitlab = "_DTan13_"
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = "DTan13"
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = "10990171"
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = "dtan13"
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = "Dhananjay-Tanpure"
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Email = "D13T@pm.me"
+    RSS = true
 
 #  Page config
 [params.page]
-#  whether to hide a page from home page
-hiddenFromHomePage = false
-#  whether to hide a page from search results
-hiddenFromSearch = false
-#  whether to enable twemoji
-twemoji = false
-# whether to enable lightgallery
-lightgallery = false
-#  whether to enable the ruby extended syntax
-ruby = true
-#  whether to enable the fraction extended syntax
-fraction = true
-#  whether to enable the fontawesome extended syntax
-fontawesome = true
-# whether to show link to Raw Markdown content of the content
-linkToMarkdown = true
-#  whether to show the full text content in RSS
-rssFullText = false
+    #  whether to hide a page from home page
+    hiddenFromHomePage = false
+    #  whether to hide a page from search results
+    hiddenFromSearch = false
+    #  whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    #  whether to enable the ruby extended syntax
+    ruby = true
+    #  whether to enable the fraction extended syntax
+    fraction = true
+    #  whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    #  whether to show the full text content in RSS
+    rssFullText = false
+
 #  Table of the contents config
 [params.page.toc]
-# whether to enable the table of the contents
-enable = true
-#  whether to keep the static table of the contents in front of the post
-keepStatic = false
-# whether to make the table of the contents in the sidebar automatically collapsed
-auto = true
+    # whether to enable the table of the contents
+    enable = true
+    #  whether to keep the static table of the contents in front of the post
+    keepStatic = false
+    # whether to make the table of the contents in the sidebar automatically collapsed
+    auto = true
+
 #  KaTeX mathematical formulas
 [params.page.math]
-enable = true
-# default block delimiter is $$ ... $$ and \\[ ... \\]
-blockLeftDelimiter = ""
-blockRightDelimiter = ""
-# default inline delimiter is $ ... $ and \\( ... \\)
-inlineLeftDelimiter = ""
-inlineRightDelimiter = ""
-# KaTeX extension copy_tex
-copyTex = true
-# KaTeX extension mhchem
-mhchem = true
+    enable = true
+    # default block delimiter is $$ ... $$ and \\[ ... \\]
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    # default inline delimiter is $ ... $ and \\( ... \\)
+    inlineLeftDelimiter = ""
+    inlineRightDelimiter = ""
+    # KaTeX extension copy_tex
+    copyTex = true
+    # KaTeX extension mhchem
+    mhchem = true
+
 #  Code config
 [params.page.code]
-# whether to show the copy button of the code block
-copy = true
-# the maximum number of lines of displayed code by default
-maxShownLines = 50
+    # whether to show the copy button of the code block
+    copy = true
+    # the maximum number of lines of displayed code by default
+    maxShownLines = 50
+
 #  social share links in post page
 [params.page.share]
-enable = true
-Twitter = true
-Facebook = true
-Linkedin = true
-Whatsapp = true
-Pinterest = true
-Tumblr = true
-HackerNews = false
-Reddit = false
-VK = false
-Buffer = false
-Xing = false
-Line = false
-Instapaper = false
-Pocket = false
-Digg = false
-Stumbleupon = false
-Flipboard = false
-Weibo = false
-Renren = false
-Myspace = false
-Blogger = false
-Baidu = false
-Odnoklassniki = false
-Evernote = false
-Skype = false
-Trello = false
-Mix = false
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+    Whatsapp = true
+    Pinterest = true
+    Tumblr = true
+    HackerNews = false
+    Reddit = false
+    VK = false
+    Buffer = false
+    Xing = false
+    Line = false
+    Instapaper = false
+    Pocket = false
+    Digg = false
+    Stumbleupon = false
+    Flipboard = false
+    Weibo = false
+    Renren = false
+    Myspace = false
+    Blogger = false
+    Baidu = false
+    Odnoklassniki = false
+    Evernote = false
+    Skype = false
+    Trello = false
+    Mix = false
 
 [params.page.comment]
-enable = false
-# Disqus comment config (https://disqus.com/)
-[params.page.comment.disqus]
-enable = true
-# Disqus shortname to use Disqus in posts
-shortname = "DTan13"
+    enable = false
+    # Disqus comment config (https://disqus.com/)
+    [params.page.comment.disqus]
+    enable = true
+    # Disqus shortname to use Disqus in posts
+    shortname = "DTan13"
 
 #  Compatibility config
 [params.compatibility]
-# whether to use Polyfill.io to be compatible with older browsers
-polyfill = false
-# whether to use object-fit-images to be compatible with older browsers
-objectFit = false
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit = false
 
 [params.typeit]
-# typing speed between each step (measured in milliseconds)
-speed = 100
-# blinking speed of the cursor (measured in milliseconds)
-cursorSpeed = 1000
-# character used for the cursor (HTML format is supported)
-cursorChar = "|"
-# cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-duration = -1
+    # typing speed between each step (measured in milliseconds)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1
 
 # Markup related config in Hugo
 [markup]
+
 # Syntax Highlighting
 [markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNos = true
-lineNumbersInTable = true
-# false is a necessary configuration
-# (https://github.com/dillonzq/LoveIt/issues/158)
-noClasses = false
-# Goldmark is from Hugo 0.60 the default library used for Markdown
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration
+    # (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+    # Goldmark is from Hugo 0.60 the default library used for Markdown
+
 [markup.goldmark]
+
 [markup.goldmark.extensions]
-definitionList = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
-taskList = true
-typographer = true
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+
 [markup.goldmark.renderer]
-# whether to use HTML tags directly in the document
-unsafe = true
+    # whether to use HTML tags directly in the document
+    unsafe = true
+
 # Table Of Contents settings
 [markup.tableOfContents]
-startLevel = 2
-endLevel = 6
+    startLevel = 2
+    endLevel = 6
 
 # Author config
 [author]
-name = "DTan13"
-email = "D13T@pm.me"
-link = "https://github.com/DTan13"
+    name = "DTan13"
+    email = "D13T@pm.me"
+    link = "https://github.com/DTan13"
 
 # Sitemap config
 [sitemap]
-changefreq = "weekly"
-filename = "sitemap.xml"
-priority = 0.5
+    changefreq = "weekly"
+    filename = "sitemap.xml"
+    priority = 0.5
 
 # Permalinks config
 [Permalinks]
-# posts = ":year/:month/:filename"
-posts = ":filename"
+    posts = ":year/:month/:day/:filename"
 
 # Privacy config
 [privacy]
+
 #  privacy of the Google Analytics (replaced by params.analytics.google)
 [privacy.googleAnalytics]
-# ...
+
 [privacy.twitter]
-enableDNT = true
+    enableDNT = true
+
 [privacy.youtube]
-privacyEnhanced = true
+    privacyEnhanced = true
 
 # Options to make output .md files
 [mediaTypes]
+
 [mediaTypes."text/plain"]
-suffixes = ["md"]
+    suffixes = ["md"]
 
 # Options to make output .md files
 [outputFormats.MarkDown]
-mediaType = "text/plain"
-isPlainText = true
-isHTML = false
+    mediaType = "text/plain"
+    isPlainText = true
+    isHTML = false
 
 # Options to make hugo output files
 [outputs]
-# 
-home = ["HTML", "RSS", "JSON"]
-page = ["HTML", "MarkDown"]
-section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-taxonomyTerm = ["HTML"]
+    home = ["HTML", "RSS", "JSON"]
+    page = ["HTML", "MarkDown"]
+    section = ["HTML", "RSS"]
+    taxonomy = ["HTML", "RSS"]
+    taxonomyTerm = ["HTML"]
