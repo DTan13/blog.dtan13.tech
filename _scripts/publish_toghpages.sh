@@ -27,5 +27,8 @@ hugo
 echo "Adding Brave verification"
 cd public && touch .nojekyll
 
+echo "CNAME"
+echo "blog.dtan13.tech" >CNAME
+
 echo "Updating gh-pages branch"
 git add --all && git commit -m "Publishing to DTan13.github.io" && cd ..
