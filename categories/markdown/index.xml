@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Markdown - Category - DTan13</title>
-        <link>https://dtan13.github.io/categories/markdown/</link>
+        <link>blog.dtan13.tech/categories/markdown/</link>
         <description>Markdown - Category - DTan13</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>D13T@pm.me (DTan13)</managingEditor>
-            <webMaster>D13T@pm.me (DTan13)</webMaster><lastBuildDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</lastBuildDate><atom:link href="https://dtan13.github.io/categories/markdown/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>D13T@pm.me (DTan13)</webMaster><lastBuildDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</lastBuildDate><atom:link href="blog.dtan13.tech/categories/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Exploring Markdown Syntax of LoveIt</title>
-    <link>https://dtan13.github.io/2021/06/01/exploring-markdown-syntax/</link>
+    <link>blog.dtan13.tech/2021/06/01/exploring-markdown-syntax/</link>
     <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://dtan13.github.io/2021/06/01/exploring-markdown-syntax/</guid>
+    <guid>blog.dtan13.tech/2021/06/01/exploring-markdown-syntax/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/2021/06/01/featured-image.png" referrerpolicy="no-referrer">
+                <img src="/blog.dtan13.tech/images/2021/06/01/featured-image.png" referrerpolicy="no-referrer">
             </div><p>This post is for exploring markdown syntax, built-in and extended shortcodes of <strong>LoveIt</strong> theme.</p>]]></description>
 </item></channel>
 </rss>
