@@ -39,14 +39,6 @@ enableEmoji = true
         url = "/categories/"
         title = "Categories"
         weight = 3
-    [[menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/DTan13/DTan13.github.io"
-        title = "GitHub"
-        weight = 4
 
 [params]
     #  LoveIt theme version
@@ -58,7 +50,7 @@ enableEmoji = true
     # site default theme ("light", "dark", "auto")
     defaultTheme = "dark"
     # public git repo url only then enableGitInfo is true
-    gitRepo = "https://github.com/DTan13/DTan13.github.io"
+    gitRepo = "https://github.com/DTan13/blog.dtan13.tech"
     #  which hash function used for SRI, when empty, no SRI is used
     # ("sha256", "sha384", "sha512", "md5")
     # fingerprint = ""
@@ -185,7 +177,7 @@ enableEmoji = true
     Youtubechannel = ""
     Tumblr = ""
     Quora = ""
-    Keybase = ""
+    Keybase = "dtan13"
     Pinterest = ""
     Reddit = "DTan13"
     Codepen = ""
@@ -234,7 +226,7 @@ enableEmoji = true
     XMPP = ""
     Matrix = ""
     Bilibili = ""
-    Email = "D13T@pm.me"
+    Email = "dtan13@pm.me"
     RSS = true
 
 #  Page config
@@ -254,7 +246,7 @@ enableEmoji = true
     #  whether to enable the fontawesome extended syntax
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
+    linkToMarkdown = false
     #  whether to show the full text content in RSS
     rssFullText = false
 
@@ -297,35 +289,37 @@ enableEmoji = true
     Whatsapp = true
     Pinterest = true
     Tumblr = true
-    HackerNews = false
-    Reddit = false
+    HackerNews = true
+    Reddit = true
     VK = false
     Buffer = false
     Xing = false
     Line = false
     Instapaper = false
-    Pocket = false
+    Pocket = true
     Digg = false
     Stumbleupon = false
-    Flipboard = false
+    Flipboard = true
     Weibo = false
     Renren = false
     Myspace = false
-    Blogger = false
+    Blogger = true
     Baidu = false
     Odnoklassniki = false
     Evernote = false
-    Skype = false
-    Trello = false
+    Skype = true
+    Trello = true
     Mix = false
 
 [params.page.comment]
     enable = true
-    # Disqus comment config (https://disqus.com/)
-    [params.page.comment.disqus]
-    enable = true
-    # Disqus shortname to use Disqus in posts
-    shortname = "d13t"
+    # Gitalk comment config (https://github.com/gitalk/gitalk)
+    [params.page.comment.gitalk]
+        enable = true
+        owner = "DTan13"
+        repo = "blog.dtan13.tech.comments"
+        clientId = "50369ddf8e4c9ad319b1"
+        clientSecret = "2738f42660788408ecca17b690d1fee8c9dead4d"
 
 #  Compatibility config
 [params.compatibility]
@@ -336,7 +330,7 @@ enableEmoji = true
 
 [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 100
+    speed = 50
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
