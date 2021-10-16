@@ -319,7 +319,7 @@ enableEmoji = true
         owner = "DTan13"
         repo = "blog.dtan13.tech.comments"
         clientId = "50369ddf8e4c9ad319b1"
-        clientSecret = "2738f42660788408ecca17b690d1fee8c9dead4d"
+        clientSecret = "d7c91e37cd6074c34adb794e0281d1888645e9d8"
 
 #  Compatibility config
 [params.compatibility]
