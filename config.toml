@@ -1,4 +1,4 @@
-baseURL = "https://dtan13.github.io/"
+baseURL = "blog.dtan13.tech"
 languageCode = "en-us"
 title = "DTan13"
 
@@ -320,12 +320,12 @@ enableEmoji = true
     Mix = false
 
 [params.page.comment]
-    enable = false
+    enable = true
     # Disqus comment config (https://disqus.com/)
     [params.page.comment.disqus]
     enable = true
     # Disqus shortname to use Disqus in posts
-    shortname = "DTan13"
+    shortname = "d13t"
 
 #  Compatibility config
 [params.compatibility]
