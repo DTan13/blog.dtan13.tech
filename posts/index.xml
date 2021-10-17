@@ -3,12 +3,11 @@
         <title>All Posts - DTan13</title>
         <link>/posts/</link>
         <description>All Posts | DTan13</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>D13T@pm.me (DTan13)</managingEditor>
-            <webMaster>D13T@pm.me (DTan13)</webMaster><lastBuildDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Recovering a Broken Linux Installation With Chroot</title>
     <link>/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
     <pubDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</pubDate>
-    <author>Author</author>
+    <author>Dhananjay Tanpure</author>
     <guid>/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/02/featured-image.png" referrerpolicy="no-referrer">
@@ -18,7 +17,7 @@
     <title>Add Power Off and Reboot to Grub Menu</title>
     <link>/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</link>
     <pubDate>Wed, 04 Aug 2021 22:43:02 &#43;0530</pubDate>
-    <author>Author</author>
+    <author>Dhananjay Tanpure</author>
     <guid>/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/01/featured-image.jpg" referrerpolicy="no-referrer">
@@ -27,7 +26,7 @@
     <title>Exploring Markdown Syntax of LoveIt</title>
     <link>/2021/06/01/exploring-markdown-syntax/</link>
     <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
-    <author>Author</author>
+    <author>Dhananjay Tanpure</author>
     <guid>/2021/06/01/exploring-markdown-syntax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/06/01/featured-image.png" referrerpolicy="no-referrer">

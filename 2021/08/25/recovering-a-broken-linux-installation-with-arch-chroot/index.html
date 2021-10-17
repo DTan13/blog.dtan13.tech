@@ -2,23 +2,22 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Recovering a Broken Linux Installation With Chroot - DTan13</title><meta name="Description" content="I hate Windows!"><meta property="og:title" content="Recovering a Broken Linux Installation With Chroot" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>Recovering a Broken Linux Installation With Chroot | </title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+<meta name="twitter:title" content="Recovering a Broken Linux Installation With Chroot"/>
+<meta name="twitter:description" content="I hate Windows!"/><meta name="twitter:creator" content="@_DTan13_"/><meta name="Description" content="I hate Windows!"><meta property="og:title" content="Recovering a Broken Linux Installation With Chroot" />
 <meta property="og:description" content="I hate Windows!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-25T17:53:04+05:30" />
-<meta property="article:modified_time" content="2021-10-15T22:38:43+05:30" />
+<meta property="article:modified_time" content="2021-10-17T12:41:30+05:30" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Recovering a Broken Linux Installation With Chroot"/>
-<meta name="twitter:description" content="I hate Windows!"/>
 <meta name="application-name" content="DTan13">
 <meta name="apple-mobile-web-app-title" content="DTan13"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><link rel="prev" href="/2021/08/04/add-poweroff-and-reboot-to-grub-menu/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,71 +26,130 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/"
-        },"genre": "posts","keywords": "chroot, grub, linux, error, recovery","wordcount":  767 ,
-        "url": "\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/","datePublished": "2021-08-25T17:53:04+05:30","dateModified": "2021-10-15T22:38:43+05:30","publisher": {
-            "@type": "Organization",
-            "name": "Dhananjay Tanpure"},"author": {
-                "@type": "Person",
-                "name": "Dhananjay Tanpure"
-            },"description": "I hate Windows!"
+        },"genre": "posts","keywords": "chroot, grub, linux, error, recovery","wordCount":  718 ,
+        "url": "\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/","datePublished": "2021-08-25T17:53:04+05:30","dateModified": "2021-10-17T12:41:30+05:30","description": "I hate Windows!"
     }
-    </script></head>
-    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": ""
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Linux",
+            "item": "/categories/linux/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Recovering a Broken Linux Installation With Chroot"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DTan13"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i> Posts </a><a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i> Tags </a><a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="DTan13" class="header-logo logo-svg"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i> Posts </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i> Tags </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i> Categories </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <span class="svg-icon icon-moon"></span>
                 </a>
             </div>
         </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DTan13"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i>Posts</a><a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i>Tags</a><a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i>Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
-    </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Recovering a Broken Linux Installation With Chroot</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DTan13" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dhananjay Tanpure</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="25-Aug-2021">25-Aug-2021</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;767 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/images/2021/08/02/featured-image.png"
-        data-srcset="/images/2021/08/02/featured-image.png, /images/2021/08/02/featured-image.png 1.5x, /images/2021/08/02/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/images/2021/08/02/featured-image.png"
-        title="I hate Windows!" /></div><div class="details toc" id="toc-static"  kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="DTan13" class="header-logo"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i>Posts</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i>Tags</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i>Categories</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <span class="svg-icon icon-moon"></span>
+                </a></div>
+        </div>
+    </div></header><main class="main">
+<div class="container content-article page-toc theme-wide"><div class="toc" id="toc-auto">
+            <div class="toc-title">Contents</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">Home </a></li><li><a href="/categories/linux/">Linux </a></li><li>Recovering a Broken Linux Installation With Chroot</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">Recovering a Broken Linux Installation With Chroot</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/linux/"><span class="svg-icon icon-folder"></span>Linux</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-08-25">25-Aug-2021</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>718 words
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>4 minutes
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-wide">
+                        <img src="/images/2021/08/02/featured-image.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>Contents</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a>
       <ul>
@@ -109,7 +167,7 @@
     <li><a href="#recovering-broken-installation">Recovering broken installation</a>
       <ul>
         <li><a href="#mount-1">Mount</a></li>
-        <li><a href="#run-grub-install">Run <code>grub-install</code></a></li>
+        <li><a href="#run-grub-install">Run <strong>grub-install</strong></a></li>
       </ul>
     </li>
     <li><a href="#finally">Finally</a>
@@ -120,11 +178,13 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><!-- Add Summary Here -->
+                    </div><div style="margin: 20px 0 20px 0;">
+                        <span class="post-update">
+                            <span class="s">Updated on 17-Oct-2021</span>
+                        </span>
+                    </div><!-- Add Summary Here -->
 <p>How to use <strong>chroot</strong> to recover broken linux installation.</p>
-<hr>
-<h2 id="introduction">Introduction</h2>
-<p><strong>Chroot</strong> is a method of focusing on a part of your filesystem. This changes apparent root directory. Which gives asscess to root filesystem and root access in order to perform various operations on the system.
+<h2 id="introduction" class="headerLink"><a href="#introduction" class="header-mark"></a>Introduction</h2><p><strong>Chroot</strong> is a method of focusing on a part of your filesystem. This changes apparent root directory. Which gives asscess to root filesystem and root access in order to perform various operations on the system.
 Some of which include</p>
 <ol>
 <li>Recovering a broken install (Reinstalling the bootloader)</li>
@@ -132,16 +192,10 @@ Some of which include</p>
 <li>Resetting a forgotten passsword</li>
 <li>Fix your /etc/fstab</li>
 </ol>
-<hr>
-<h3 id="problem">Problem</h3>
-<p>Sometimes during dual boot, due to a <strong>Windows Update</strong> or a <strong>BIOS Update</strong>, It may happen that you are left with the default bios options which has <strong>Legacy Boot</strong> mode and you only have windows as a option to boot.</p>
+<h3 id="problem" class="headerLink"><a href="#problem" class="header-mark"></a>Problem</h3><p>Sometimes during dual boot, due to a <strong>Windows Update</strong> or a <strong>BIOS Update</strong>, It may happen that you are left with the default bios options which has <strong>Legacy Boot</strong> mode and you only have windows as a option to boot.</p>
 <p>In this case the data in our linux partitions is safe but you cant access it directly. In order to gain access to the system you need to resintall GRUB.</p>
-<hr>
-<h2 id="procedure">Procedure</h2>
-<p>You need to access your broken installation in order to fix it.</p>
-<br>
-<h3 id="boot">Boot</h3>
-<ol>
+<h2 id="procedure" class="headerLink"><a href="#procedure" class="header-mark"></a>Procedure</h2><p>You need to access your broken installation in order to fix it.</p>
+<h3 id="boot" class="headerLink"><a href="#boot" class="header-mark"></a>Boot</h3><ol>
 <li>You need to grab the <strong>Arch Linux ISO</strong> from <a href="https://archlinux.org/download/" target="_blank" rel="noopener noreffer">Website</a>.</li>
 <li>Make a bootable USB Drive.</li>
 <li>Make sure to boot into UEFI mode.</li>
@@ -157,103 +211,45 @@ Some of which include</p>
 </blockquote>
 </li>
 </ol>
-<br>
-<h3 id="mount">Mount</h3>
-<p><strong>chroot</strong> is all about the root file filesystem <code>/</code>. You need to mount the partition before performing <code>chroot</code>.</p>
-<br>
+<h3 id="mount" class="headerLink"><a href="#mount" class="header-mark"></a>Mount</h3><p><strong>chroot</strong> is all about the root file filesystem <code>/</code>. You need to mount the partition before performing <code>chroot</code>.</p>
 <p><strong>Check the location and filetype of the your disk.</strong></p>
-<br>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">fdisk -l
-</code></pre></td></tr></table>
-</div>
-</div><p>Output in my case is :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Disk /dev/sda: 1.82 TiB, <span class="m">2000398934016</span> bytes, <span class="m">3907029168</span> sectors
+<pre><code class="language-bash">fdisk -l
+</code></pre>
+<p>Output in my case is :</p>
+<pre><code class="language-bash">Disk /dev/sda: 1.82 TiB, 2000398934016 bytes, 3907029168 sectors
 Disk model: ST2000LM007-1R81
-Units: sectors of <span class="m">1</span> * <span class="nv">512</span> <span class="o">=</span> <span class="m">512</span> bytes
-Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">4096</span> bytes
-I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: <span class="m">4096</span> bytes / <span class="m">4096</span> bytes
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
 Disklabel type: gpt
 
 Device          Start        End    Sectors   Size Type
-/dev/sda1        <span class="m">2048</span>     <span class="m">526335</span>     <span class="m">524288</span>   256M Linux filesystem
-/dev/sda2      <span class="m">526336</span>  <span class="m">419956735</span>  <span class="m">419430400</span>   200G Linux filesystem
-/dev/sda3   <span class="m">419956736</span> <span class="m">3277883391</span> <span class="m">2857926656</span>   1.3T Linux filesystem
-/dev/sda4  <span class="m">3277883392</span> <span class="m">3278088191</span>     <span class="m">204800</span>   100M EFI System
-/dev/sda5  <span class="m">3278088192</span> <span class="m">3278120959</span>      <span class="m">32768</span>    16M Microsoft reserved
-/dev/sda6  <span class="m">3278120960</span> <span class="m">3905969269</span>  <span class="m">627848310</span> 299.4G Microsoft basic data
-/dev/sda7  <span class="m">3905970176</span> <span class="m">3907026943</span>    <span class="m">1056768</span>   516M Windows recovery environment
-</code></pre></td></tr></table>
-</div>
-</div><p>In above output :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">/dev/sda2 <span class="c1">#root filesystem(/)</span>
-/dev/sda3 <span class="c1">#home (/home)</span>
-/dev/sda1 <span class="c1">#EFI partition</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>To properly mounting these partitions you need to know the type of partition, You can get this using <code>blkid</code> :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">blkid
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">/dev/sda4: <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;BEBE-377F&#34;</span> <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;512&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;vfat&#34;</span> <span class="nv">PARTLABEL</span><span class="o">=</span><span class="s2">&#34;EFI system partition&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;b0ce5bc5-5767-4138-ba63-209fd95abbc7&#34;</span>
-/dev/sda2: <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;cb2baa0a-3a81-42a1-9670-6060fabaa27f&#34;</span> <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;4096&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;ext4&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;8b7aaeab-1bcb-cf43-8b5d-785fbc5c63a1&#34;</span>
-/dev/sda7: <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;512&#34;</span> <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;CAAEBF45AEBF2939&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;ntfs&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;ecd471f6-cbd4-4a8a-b70c-54070669939c&#34;</span>
-/dev/sda5: <span class="nv">PARTLABEL</span><span class="o">=</span><span class="s2">&#34;Microsoft reserved partition&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;75d5ffda-1051-47cc-8cba-ae187d2d35d7&#34;</span>
-/dev/sda3: <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;1fe29b19-feb2-4924-b8ac-91a7e4785e98&#34;</span> <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;4096&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;ext4&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;f15d44bb-96f9-0d42-a0f8-4109dd5959b0&#34;</span>
-/dev/sda1: <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;D939-5AD9&#34;</span> <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;512&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;vfat&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;242f0c5c-5a6c-554c-a2c3-70d6268b835a&#34;</span>
-/dev/sda6: <span class="nv">BLOCK_SIZE</span><span class="o">=</span><span class="s2">&#34;512&#34;</span> <span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;3AAAC0ADAAC066CB&#34;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;ntfs&#34;</span> <span class="nv">PARTLABEL</span><span class="o">=</span><span class="s2">&#34;Basic data partition&#34;</span> <span class="nv">PARTUUID</span><span class="o">=</span><span class="s2">&#34;6cfc75a8-c9ee-4239-8cec-2394c0ec5037&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>You can get type of partition in <code>TYPE</code> field.</p>
-<br>
+/dev/sda1        2048     526335     524288   256M Linux filesystem
+/dev/sda2      526336  419956735  419430400   200G Linux filesystem
+/dev/sda3   419956736 3277883391 2857926656   1.3T Linux filesystem
+/dev/sda4  3277883392 3278088191     204800   100M EFI System
+/dev/sda5  3278088192 3278120959      32768    16M Microsoft reserved
+/dev/sda6  3278120960 3905969269  627848310 299.4G Microsoft basic data
+/dev/sda7  3905970176 3907026943    1056768   516M Windows recovery environment
+</code></pre>
+<p>In above output :</p>
+<pre><code class="language-bash">/dev/sda2 #root filesystem(/)
+/dev/sda3 #home (/home)
+/dev/sda1 #EFI partition
+</code></pre>
+<p>To properly mounting these partitions you need to know the type of partition, You can get this using <code>blkid</code> :</p>
+<pre><code class="language-bash">blkid
+</code></pre>
+<pre><code class="language-bash">/dev/sda4: UUID=&quot;BEBE-377F&quot; BLOCK_SIZE=&quot;512&quot; TYPE=&quot;vfat&quot; PARTLABEL=&quot;EFI system partition&quot; PARTUUID=&quot;b0ce5bc5-5767-4138-ba63-209fd95abbc7&quot;
+/dev/sda2: UUID=&quot;cb2baa0a-3a81-42a1-9670-6060fabaa27f&quot; BLOCK_SIZE=&quot;4096&quot; TYPE=&quot;ext4&quot; PARTUUID=&quot;8b7aaeab-1bcb-cf43-8b5d-785fbc5c63a1&quot;
+/dev/sda7: BLOCK_SIZE=&quot;512&quot; UUID=&quot;CAAEBF45AEBF2939&quot; TYPE=&quot;ntfs&quot; PARTUUID=&quot;ecd471f6-cbd4-4a8a-b70c-54070669939c&quot;
+/dev/sda5: PARTLABEL=&quot;Microsoft reserved partition&quot; PARTUUID=&quot;75d5ffda-1051-47cc-8cba-ae187d2d35d7&quot;
+/dev/sda3: UUID=&quot;1fe29b19-feb2-4924-b8ac-91a7e4785e98&quot; BLOCK_SIZE=&quot;4096&quot; TYPE=&quot;ext4&quot; PARTUUID=&quot;f15d44bb-96f9-0d42-a0f8-4109dd5959b0&quot;
+/dev/sda1: UUID=&quot;D939-5AD9&quot; BLOCK_SIZE=&quot;512&quot; TYPE=&quot;vfat&quot; PARTUUID=&quot;242f0c5c-5a6c-554c-a2c3-70d6268b835a&quot;
+/dev/sda6: BLOCK_SIZE=&quot;512&quot; UUID=&quot;3AAAC0ADAAC066CB&quot; TYPE=&quot;ntfs&quot; PARTLABEL=&quot;Basic data partition&quot; PARTUUID=&quot;6cfc75a8-c9ee-4239-8cec-2394c0ec5037&quot;
+</code></pre>
+<p>You can get type of partition in <code>TYPE</code> field.</p>
 <p><strong>Now mount your partition accordingly on <code>/mnt</code>.</strong></p>
-<br>
 <ul>
 <li>Most important partition is root <code>/</code>.
 <blockquote>
@@ -261,27 +257,13 @@ Device          Start        End    Sectors   Size Type
 </blockquote>
 </li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mount -t ext4 /dev/sda2 /mnt
-</code></pre></td></tr></table>
-</div>
-</div><br>
+<pre><code class="language-bash">mount -t ext4 /dev/sda2 /mnt
+</code></pre>
 <ul>
 <li>Mount <code>/home</code> if necessary</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mount -t ext4 /dev/sda3 /mnt/home
-</code></pre></td></tr></table>
-</div>
-</div><br>
+<pre><code class="language-bash">mount -t ext4 /dev/sda3 /mnt/home
+</code></pre>
 <ul>
 <li>Mount other required partitions.
 <blockquote>
@@ -289,27 +271,13 @@ Device          Start        End    Sectors   Size Type
 </blockquote>
 </li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> i in /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do</span> mount -B <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done</span>
-</code></pre></td></tr></table>
-</div>
-</div><br>
+<pre><code class="language-bash">for i in /dev /dev/pts /proc /sys /run; do mount -B $i /mnt$i; done
+</code></pre>
 <ul>
 <li>If you want to update the GRUB, mount <code>/sys/firmware/efi/efivars</code>.</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">mount -B /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars
-</code></pre></td></tr></table>
-</div>
-</div><br>
+<pre><code>mount -B /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars
+</code></pre>
 <ul>
 <li>
 <p>If you&rsquo;ve setup your network and want to use it in the chrooted system, copy over <code>/etc/resolv.conf</code> so that you&rsquo;ll be able to resolve domain names :</p>
@@ -318,28 +286,18 @@ Device          Start        End    Sectors   Size Type
 </blockquote>
 </li>
 </ul>
-<br>
 <p>After all required partitions are mounted you are free to chroot into your <code>/mnt</code> directory.</p>
-<hr>
-<h3 id="chroot">Chroot</h3>
-<p>Use <code>chroot</code> command to move into mounted filesystem.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">chroot /mnt /bin/bash
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<h3 id="chroot" class="headerLink"><a href="#chroot" class="header-mark"></a>Chroot</h3><p>Use <code>chroot</code> command to move into mounted filesystem.</p>
+<pre><code class="language-bash">chroot /mnt /bin/bash
+</code></pre>
+<ul>
 <li>If you&rsquo;ll be doing anything with GRUB, you&rsquo;ll need to be sure your <code>/etc/mtab</code> file is up-to-date :
 <blockquote>
 <p><code>grep -v rootfs /proc/mounts &gt; /etc/mtab</code></p>
 </blockquote>
 </li>
 </ul>
-<h3 id="work">Work</h3>
-<p>After a successful <code>chroot</code>, You get root access on mounted root(<code>/</code>) filesystem. You are free to do anything you want. Like :</p>
+<h3 id="work" class="headerLink"><a href="#work" class="header-mark"></a>Work</h3><p>After a successful <code>chroot</code>, You get root access on mounted root(<code>/</code>) filesystem. You are free to do anything you want. Like :</p>
 <ul>
 <li>Upgrade and Downgrade packages.
 <blockquote>
@@ -355,95 +313,79 @@ Device          Start        End    Sectors   Size Type
 <li>Upgrade or Downgrade kernel.</li>
 <li>Anything you want to do.</li>
 </ul>
-<h2 id="recovering-broken-installation">Recovering broken installation</h2>
-<h3 id="mount-1">Mount</h3>
-<p>In order to Reinstall the GRUB you need to mount your EFI partition.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mount -t vfat /dev/sda1 /boot/efi
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="run-grub-install">Run <code>grub-install</code></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot/efi --bootloader-id<span class="o">=</span>arch_grub --recheck --force --debug
-</code></pre></td></tr></table>
-</div>
-</div><p>After this make sure to unmount your EFI partition.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">umount /boot/efi
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="finally">Finally</h2>
-<h3 id="unmount">Unmount</h3>
-<p>When you are done with your work you can exit <code>chroot</code> by typing <code>exit</code>.</p>
+<h2 id="recovering-broken-installation" class="headerLink"><a href="#recovering-broken-installation" class="header-mark"></a>Recovering broken installation</h2><h3 id="mount-1" class="headerLink"><a href="#mount-1" class="header-mark"></a>Mount</h3><p>In order to Reinstall the GRUB you need to mount your EFI partition.</p>
+<pre><code class="language-bash">mount -t vfat /dev/sda1 /boot/efi
+</code></pre>
+<h3 id="run-grub-install" class="headerLink"><a href="#run-grub-install" class="header-mark"></a>Run <strong>grub-install</strong></h3><pre><code class="language-bash">grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck --force --debug
+</code></pre>
+<p>After this make sure to unmount your EFI partition.</p>
+<pre><code class="language-bash">umount /boot/efi
+</code></pre>
+<h2 id="finally" class="headerLink"><a href="#finally" class="header-mark"></a>Finally</h2><h3 id="unmount" class="headerLink"><a href="#unmount" class="header-mark"></a>Unmount</h3><p>When you are done with your work you can exit <code>chroot</code> by typing <code>exit</code>.</p>
 <p>Now unmount all the partitions you mounted.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">umount -R /mnt
-</code></pre></td></tr></table>
-</div>
-</div><p>If any error occurs, you can use <code>umount -l</code> to list all the mounted partitions and unmount remaining partitions.</p>
-<h3 id="reboot">Reboot</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">reboot
-</code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 15-Oct-2021&nbsp;<a class="git-hash" href="https://github.com/DTan13/blog.dtan13.tech/commit/2765360c3e73adb2b8c735b33d1d47b1422b1a83" target="_blank" title="commit by Dhananjay Tanpure(dtan13@pm.me) 2765360c3e73adb2b8c735b33d1d47b1422b1a83: minor updates">
-                                    <i class="fas fa-hashtag fa-fw"></i>2765360</a></span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-via="_DTan13_" data-hashtags="chroot,grub,linux,error,recovery"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-hashtag="chroot"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-description="I hate Windows!" data-image="/images/2021/08/02/featured-image.png"><i class="fab fa-pinterest fa-fw"></i></a><a href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-caption="I hate Windows!" data-tags="chroot,grub,linux,error,recovery"><i class="fab fa-tumblr fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><i class="fab fa-get-pocket fa-fw"></i></a><a href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><i class="fab fa-flipboard fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><i class="fab fa-skype fa-fw"></i></a><a href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><i class="fab fa-trello fa-fw"></i></a></span>
-            </div>
-        </div>
-    </div>
+<pre><code class="language-bash">umount -R /mnt
+</code></pre>
+<p>If any error occurs, you can use <code>umount -l</code> to list all the mounted partitions and unmount remaining partitions.</p>
+<h3 id="reboot" class="headerLink"><a href="#reboot" class="header-mark"></a>Reboot</h3><pre><code class="language-bash">reboot
+</code></pre></div><footer>
+                        <div class="post">
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/chroot/">chroot</a>,&nbsp;<a href="/tags/grub/">grub</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/error/">error</a>,&nbsp;<a href="/tags/recovery/">recovery</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
 
-    <div class="post-nav"><a href="/2021/08/04/add-poweroff-and-reboot-to-grub-menu/" class="prev" rel="prev" title="Add Power Off and Reboot to Grub Menu"><i class="fas fa-angle-left fa-fw"></i>Add Power Off and Reboot to Grub Menu</a></div>
-</div>
-<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-via="_DTan13_" data-hashtags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-hashtag="chroot"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-whatsapp" href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-web><span class="svg-social-icon icon-whatsapp"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pinterest" href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-description="I hate Windows!" data-image="/images/2021/08/02/featured-image.png"><span class="svg-social-icon icon-pinterest"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-tumblr" href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-caption="I hate Windows!" data-tags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-tumblr"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pocket" href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-pocket"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-flipboard" href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-flipboard"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-blogger" href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-blogger"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-skype" href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-skype"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-trello" href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-trello"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-hackernews" href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-hacker-news"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/chroot/" class="tag">chroot</a><a href="/tags/grub/" class="tag">grub</a><a href="/tags/linux/" class="tag">linux</a><a href="/tags/error/" class="tag">error</a><a href="/tags/recovery/" class="tag">recovery</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
-            </noscript></div></article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/DTan13" target="_blank">DTan13</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a></span></div>
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="svg-icon icon-arrow-up"></i>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
+                <i class="svg-icon icon-comments-fixed"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["DTan13"],"clientID":"50369ddf8e4c9ad319b1","clientSecret":"d7c91e37cd6074c34adb794e0281d1888645e9d8","id":"2021-08-25T17:53:04+05:30","owner":"DTan13","repo":"blog.dtan13.tech.comments","title":"Recovering a Broken Linux Installation With Chroot"}}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["DTan13"],"clientID":"50369ddf8e4c9ad319b1","clientSecret":"d7c91e37cd6074c34adb794e0281d1888645e9d8","id":"2021-08-25T17:53:04+05:30","owner":"DTan13","repo":"blog.dtan13.tech.comments","title":"Recovering a Broken Linux Installation With Chroot"}}};</script><script src="/js/theme.min.js"></script></body>
 </html>

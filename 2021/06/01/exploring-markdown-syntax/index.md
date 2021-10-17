@@ -13,19 +13,11 @@ With hundreads of Clean, Responsive and Simple **[Themes](https://themes.gohugo.
 
 {{< youtube w7Ft2ymGmfc >}}
 
----
-
----
-
 ## Theme
 
 After Examining nearly all the **[Themes](https://themes.gohugo.io/)**, I selected **[LoveIt](https://hugoloveit.com/)**. It is a beautiful and responsive theme with many other [features](https://github.com/dillonzq/LoveIt#why-choose-loveit).
 
 This theme have good **[Documentation](https://hugoloveit.com/categories/documentation/)**, readable dark-mode, and some awesome CSS animations.
-
----
-
----
 
 ## Exploring Markdown Syntax
 
@@ -47,8 +39,6 @@ Headings from `h2` through `h6` are constructed with a `#` for each level :
 ###### h6 Heading
 ```
 
----
-
 ### Comment
 
 Comments should be similar to HTML.
@@ -64,8 +54,6 @@ Comment below should **NOT** be seen :
 <!--
 This is invisible!
 -->
-
----
 
 ### Horizontal Rules
 
@@ -134,8 +122,6 @@ Output :
 
 ~~**_bold, italics and strikethrough_**~~
 
----
-
 ### Blockquotes
 
 Add `>` before any text you want to quote :
@@ -161,8 +147,6 @@ Output :
 > This is a **Blockquote**.
 >
 > > This is a Nested Blockquote.
-
----
 
 ### Lists
 
@@ -254,8 +238,6 @@ Output:
 
 -   [x] Task one
 -   [ ] Task two
-
----
 
 ### Code
 
@@ -365,8 +347,6 @@ func recive(fanin chan<- int, channels []chan int) {
 }
 ```
 
----
-
 ### Tables
 
 Tables are created by adding `pipes`**|** as dividers between each cell, and by adding a line of `dashes`**-** beneath the header. Note that the pipes do not need to be vertically aligned.
@@ -396,8 +376,6 @@ Output :
 > -   Adding a colon on the right side of the dashes below any heading will right align text for that column.
 > -   Adding a colon on the left side of the dashes below any heading will left align text for that column.
 > -   Adding colons on both sides of the dashes below any heading will center align text for that column.
-
----
 
 ### Links
 
@@ -463,8 +441,6 @@ Content for chapter one.
 The specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
 {{< /admonition >}}
 
----
-
 ### Footnotes
 
 Footnotes allow you to add notes and references without cluttering the body of the document. When you create a footnote, a superscript number with a link appears where you added the footnote reference. Readers can click the link to jump to the content of the footnote at the bottom of the page.
@@ -487,8 +463,6 @@ This is a footnote with "label"[^label]
 
 [^1]: This is a digital footnote
 [^label]: This is a footnote with "label"
-
----
 
 ### Images
 
@@ -524,10 +498,6 @@ With a reference later in the document defining the URL location :
 
 [id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
 
----
-
----
-
 ## Built-in Shortcodes
 
 ### figure
@@ -540,9 +510,7 @@ Example `figure` input :
 
 Output:-
 
-{{< figure src="/images/2020/06/01/exploring-markdown-syntax/way.jpg" title="Way (figure)" >}}
-
----
+{{< figure src="/images/2021/06/01/way.jpg" title="Way (figure)" >}}
 
 ### gist
 
@@ -555,8 +523,6 @@ Example `gist` input :
 Output:-
 
 {{< gist spf13 7896402 >}}
-
----
 
 ### highlight
 
@@ -590,8 +556,6 @@ Output :
 </section>
 {{< /highlight >}}
 
----
-
 ### instagram
 
 Example `instagram` input :
@@ -599,8 +563,6 @@ Example `instagram` input :
 ```markdown
 {{</* instagram BsOGulcndj- hidecaption */>}}
 ```
-
----
 
 ### param
 
@@ -616,8 +578,6 @@ Output:-
 
 {{< param description >}}
 
----
-
 ### tweet
 
 [Documentation of `tweet`](https://gohugo.io/content-management/shortcodes#tweet)
@@ -632,8 +592,6 @@ Output :
 
 {{< tweet 877500564405444608 >}}
 
----
-
 ### vimeo
 
 [Documentation of `vimeo`](https://gohugo.io/content-management/shortcodes#vimeo)
@@ -647,8 +605,6 @@ Example `vimeo` input :
 Output :
 
 {{< vimeo 146022717 >}}
-
----
 
 ### youtube
 
