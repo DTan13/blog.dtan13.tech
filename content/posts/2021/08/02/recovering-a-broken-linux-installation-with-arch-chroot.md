@@ -16,6 +16,8 @@ hiddenFromSearch: false
 featuredImage: "/images/2021/08/02/featured-image.png"
 featuredImagePreview: "/images/2021/08/02/featured-image.png"
 
+theme: "wide"
+
 toc:
     enable: true
 math:
@@ -29,8 +31,6 @@ How to use **chroot** to recover broken linux installation.
 
 <!--more-->
 
----
-
 ## Introduction
 
 **Chroot** is a method of focusing on a part of your filesystem. This changes apparent root directory. Which gives asscess to root filesystem and root access in order to perform various operations on the system.
@@ -41,21 +41,15 @@ Some of which include
 3. Resetting a forgotten passsword
 4. Fix your /etc/fstab
 
----
-
 ### Problem
 
 Sometimes during dual boot, due to a **Windows Update** or a **BIOS Update**, It may happen that you are left with the default bios options which has **Legacy Boot** mode and you only have windows as a option to boot.
 
 In this case the data in our linux partitions is safe but you cant access it directly. In order to gain access to the system you need to resintall GRUB.
 
----
-
 ## Procedure
 
 You need to access your broken installation in order to fix it.
-
-<br>
 
 ### Boot
 
@@ -68,17 +62,11 @@ You need to access your broken installation in order to fix it.
 6. Enable Swap if needed.
     > `swapon /path/to/swapfile`
 
-<br>
-
 ### Mount
 
 **chroot** is all about the root file filesystem `/`. You need to mount the partition before performing `chroot`.
 
-<br>
-
 **Check the location and filetype of the your disk.**
-
-<br>
 
 ```bash
 fdisk -l
@@ -130,11 +118,7 @@ blkid
 
 You can get type of partition in `TYPE` field.
 
-<br>
-
 **Now mount your partition accordingly on `/mnt`.**
-
-<br>
 
 -   Most important partition is root `/`.
     > Here `-t` is the type of filesystem.
@@ -143,15 +127,11 @@ You can get type of partition in `TYPE` field.
 mount -t ext4 /dev/sda2 /mnt
 ```
 
-<br>
-
 -   Mount `/home` if necessary
 
 ```bash
 mount -t ext4 /dev/sda3 /mnt/home
 ```
-
-<br>
 
 -   Mount other required partitions.
     > These include virtual filesystems required for chroot to run
@@ -160,25 +140,17 @@ mount -t ext4 /dev/sda3 /mnt/home
 for i in /dev /dev/pts /proc /sys /run; do mount -B $i /mnt$i; done
 ```
 
-<br>
-
 -   If you want to update the GRUB, mount `/sys/firmware/efi/efivars`.
 
 ```
 mount -B /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars
 ```
 
-<br>
-
 -   If you've setup your network and want to use it in the chrooted system, copy over `/etc/resolv.conf` so that you'll be able to resolve domain names :
 
     > `cp -L /etc/resolv.conf /mnt/etc/resolv.conf`
 
-<br>
-
 After all required partitions are mounted you are free to chroot into your `/mnt` directory.
-
----
 
 ### Chroot
 
@@ -213,7 +185,7 @@ In order to Reinstall the GRUB you need to mount your EFI partition.
 mount -t vfat /dev/sda1 /boot/efi
 ```
 
-### Run `grub-install`
+### Run **grub-install**
 
 ```bash
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck --force --debug
