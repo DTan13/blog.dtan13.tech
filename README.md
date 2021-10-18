@@ -1,3 +1,3 @@
-# DTan13.github.io
+# [Blog](blog.dtan13.tech)
 
-Personal Blog 
+Just a Personal Blog

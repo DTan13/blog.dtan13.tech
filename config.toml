@@ -1,6 +1,6 @@
-baseURL = ''
+baseURL = 'https://blog.dtan13.me'
 languageCode = 'en-us'
-title = 'DTan13'
+title = 'Blog - DTan13'
 theme = 'uBlogger'
 enableRobotsTXT = true
 enableGitInfo = true
@@ -8,16 +8,16 @@ enableEmoji = true
 
 [[menu.main]]
 identifier = 'posts'
-pre = '''<i class='fas fa-file fa-fw'></i>'''
+pre = ''
 post = ''
 name = 'Posts'
 url = '/posts/'
-title = 'Blog Posts'
+title = 'Posts'
 weight = 1
 
 [[menu.main]]
 identifier = 'tags'
-pre = '''<i class='fas fa-tag fa-fw'></i>'''
+pre = ''
 post = ''
 name = 'Tags'
 url = '/tags/'
@@ -26,12 +26,21 @@ weight = 2
 
 [[menu.main]]
 identifier = 'categories'
-pre = '''<i class='fas fa-list-alt fa-fw'></i>'''
+pre = ''
 post = ''
 name = 'Categories'
 url = '/categories/'
 title = 'Categories'
 weight = 3
+
+[[menu.main]]
+identifier = 'about'
+pre = ''
+post = ''
+name = 'About'
+url = 'https://dtan13.tech'
+title = 'About'
+weight = 4
 
 [params]
 version = '2.0.X'
@@ -54,24 +63,24 @@ mobileMode = 'auto'
 
 [params.header.title]
 name = 'DTan13'
-pre = "<i class='fas fa-terminal'></i>"
+pre = ''
 post = ''
-typeit = false
 
 [params.footer]
 enable = true
 custom = ''
 hugo = false
 copyright = true
-author = true
+author = false
 since = 2021
 icp = ''
-license = '<a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a>'
+# workaround for author(sorry!)
+license = 'Dhananjay Tanpure'
 
 [params.section]
 paginate = 20
 dateFormat = '01-02'
-rss = 20
+rss = 10
 
 [params.list]
 paginate = 20
@@ -83,10 +92,9 @@ rss = 10
 
 [params.home.profile]
 enable = true
-avatarURL = '/images/avatar.png'
 title = 'Dhananjay Tanpure'
+avatarURL = '/images/avatar.png'
 subtitle = 'Exploring!'
-typeit = true
 social = true
 
 [params.home.posts]
