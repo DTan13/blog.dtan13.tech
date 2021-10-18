@@ -8,7 +8,7 @@
 <meta name="twitter:description" content="I hate Windows!"/><meta name="twitter:creator" content="@_DTan13_"/><meta name="Description" content="I hate Windows!"><meta property="og:title" content="Recovering a Broken Linux Installation With Chroot" />
 <meta property="og:description" content="I hate Windows!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-25T17:53:04+05:30" />
 <meta property="article:modified_time" content="2021-10-17T12:41:30+05:30" />
 
@@ -17,7 +17,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -25,9 +25,9 @@
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/"
+            "@id": "https:\/\/blog.dtan13.me\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/"
         },"genre": "posts","keywords": "chroot, grub, linux, error, recovery","wordCount":  718 ,
-        "url": "\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/","datePublished": "2021-08-25T17:53:04+05:30","dateModified": "2021-10-17T12:41:30+05:30","description": "I hate Windows!"
+        "url": "https:\/\/blog.dtan13.me\/2021\/08\/25\/recovering-a-broken-linux-installation-with-arch-chroot\/","datePublished": "2021-08-25T17:53:04+05:30","dateModified": "2021-10-17T12:41:30+05:30","description": "I hate Windows!"
     }
     </script><script type="application/ld+json">
     {
@@ -37,12 +37,12 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": ""
+            "item": "https:\/\/blog.dtan13.me"
         },{
             "@type": "ListItem",
             "position": 2,
             "name": "Linux",
-            "item": "/categories/linux/"
+            "item": "https://blog.dtan13.me/categories/linux/"
         },{
                 "@type": "ListItem",
                 "position": 3,
@@ -56,17 +56,19 @@
     <div class="desktop header" id="header-desktop">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="DTan13" class="header-logo logo-svg"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
+                <a href="/" title="Blog - DTan13" class="header-logo logo-svg">DTan13</a>
             </div>
             <div class="menu">
                 <nav>
                     <h2 class="display-hidden">Основная навигация</h2>
                     <ul class="menu-inner"><li>
-                            <a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i> Posts </a>
+                            <a class="menu-item" href="/posts/" title="Posts"> Posts </a>
                         </li><li>
-                            <a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i> Tags </a>
+                            <a class="menu-item" href="/tags/" title="Tags"> Tags </a>
                         </li><li>
-                            <a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i> Categories </a>
+                            <a class="menu-item" href="/categories/" title="Categories"> Categories </a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank"> About </a>
                         </li></ul>
                 </nav><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <span class="svg-icon icon-moon"></span>
@@ -77,7 +79,7 @@
         <div class="header-container">
             <div class="header-wrapper">
                 <div class="header-title">
-                    <a href="/" title="DTan13" class="header-logo"><span class="header-title-pre"><i class='fas fa-terminal'></i></span>DTan13</a>
+                    <a href="/" title="Blog - DTan13" class="header-logo">DTan13</a>
                 </div>
                 <div class="menu-toggle" id="menu-toggle-mobile">
                     <span></span><span></span><span></span>
@@ -86,11 +88,13 @@
             <div class="menu" id="menu-mobile"><nav>
                     <h2 class="display-hidden">Основная навигация</h2>
                     <ul><li>
-                            <a class="menu-item" href="/posts/" title="Blog Posts"><i class='fas fa-file fa-fw'></i>Posts</a>
+                            <a class="menu-item" href="/posts/" title="Posts">Posts</a>
                         </li><li>
-                            <a class="menu-item" href="/tags/" title="Tags"><i class='fas fa-tag fa-fw'></i>Tags</a>
+                            <a class="menu-item" href="/tags/" title="Tags">Tags</a>
                         </li><li>
-                            <a class="menu-item" href="/categories/" title="Categories"><i class='fas fa-list-alt fa-fw'></i>Categories</a>
+                            <a class="menu-item" href="/categories/" title="Categories">Categories</a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank">About</a>
                         </li></ul>
                 </nav>
                 <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
@@ -332,31 +336,31 @@ Device          Start        End    Sectors   Size Type
 
 
 <div class="post-share"><div class="share-link">
-        <a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-via="_DTan13_" data-hashtags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-twitter"></span></a>
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-via="_DTan13_" data-hashtags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-twitter"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-hashtag="chroot"><span class="svg-social-icon icon-facebook"></span></a>
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-hashtag="chroot"><span class="svg-social-icon icon-facebook"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-linkedin" href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-linkedin"></span></a>
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-linkedin"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-whatsapp" href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-web><span class="svg-social-icon icon-whatsapp"></span></a>
+        <a class="share-icon share-whatsapp" href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-web><span class="svg-social-icon icon-whatsapp"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-pinterest" href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-description="I hate Windows!" data-image="/images/2021/08/02/featured-image.png"><span class="svg-social-icon icon-pinterest"></span></a>
+        <a class="share-icon share-pinterest" href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-description="I hate Windows!" data-image="/images/2021/08/02/featured-image.png"><span class="svg-social-icon icon-pinterest"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-tumblr" href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-caption="I hate Windows!" data-tags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-tumblr"></span></a>
+        <a class="share-icon share-tumblr" href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-caption="I hate Windows!" data-tags="chroot,grub,linux,error,recovery"><span class="svg-social-icon icon-tumblr"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-reddit" href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-reddit"></span></a>
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-reddit"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-pocket" href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-pocket"></span></a>
+        <a class="share-icon share-pocket" href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/"><span class="svg-social-icon icon-pocket"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-flipboard" href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-flipboard"></span></a>
+        <a class="share-icon share-flipboard" href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-flipboard"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-blogger" href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-blogger"></span></a>
+        <a class="share-icon share-blogger" href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-blogger"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-skype" href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-skype"></span></a>
+        <a class="share-icon share-skype" href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-skype"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-trello" href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-trello"></span></a>
+        <a class="share-icon share-trello" href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot" data-description="I hate Windows!"><span class="svg-social-icon icon-trello"></span></a>
     </div><div class="share-link">
-        <a class="share-icon share-hackernews" href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-hacker-news"></span></a>
+        <a class="share-icon share-hackernews" href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/" data-title="Recovering a Broken Linux Installation With Chroot"><span class="svg-social-icon icon-hacker-news"></span></a>
     </div></div>
 
 
@@ -378,7 +382,7 @@ Device          Start        End    Sectors   Size Type
             </noscript></div></section></div>
 
 </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://mit-license.org/" target="_blank">MIT</a></span></div>
+        <div class="footer-container"><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span>&nbsp;<span class="license">Dhananjay Tanpure</span></div>
         </div>
     </footer></div>
 

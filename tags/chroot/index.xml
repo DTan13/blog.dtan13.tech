@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>chroot - Tag - DTan13</title>
-        <link>/tags/chroot/</link>
-        <description>chroot - Tag - DTan13</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</lastBuildDate><atom:link href="/tags/chroot/" rel="self" type="application/rss+xml" /><item>
+        <title>chroot - Tag - Blog - DTan13</title>
+        <link>https://blog.dtan13.me/tags/chroot/</link>
+        <description>chroot - Tag - Blog - DTan13</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.me/tags/chroot/" rel="self" type="application/rss+xml" /><item>
     <title>Recovering a Broken Linux Installation With Chroot</title>
-    <link>/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
+    <link>https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
     <pubDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</pubDate>
     <author>Dhananjay Tanpure</author>
-    <guid>/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
+    <guid>https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/02/featured-image.png" referrerpolicy="no-referrer">
             </div><!-- Add Summary Here -->
