@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>Understanding Colors and Styles in Terminal | </title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+<meta name="twitter:title" content="Understanding Colors and Styles in Terminal"/>
+<meta name="twitter:description" content="Eye Donation – a gift of beauty, a return for Eternity"/><meta name="twitter:creator" content="@_DTan13_"/><meta name="Description" content="Eye Donation – a gift of beauty, a return for Eternity"><meta property="og:title" content="Understanding Colors and Styles in Terminal" />
+<meta property="og:description" content="Eye Donation – a gift of beauty, a return for Eternity" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-22T00:14:48+05:30" />
+<meta property="article:modified_time" content="2021-10-23T14:41:36+05:30" />
+
+<meta name="application-name" content="DTan13">
+<meta name="apple-mobile-web-app-title" content="DTan13"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Understanding Colors and Styles in Terminal",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.dtan13.me\/2021\/10\/22\/understanding-colors-and-styles-in-terminal\/"
+        },"genre": "posts","keywords": "colors, shell, terminal, zsh","wordCount":  958 ,
+        "url": "https:\/\/blog.dtan13.me\/2021\/10\/22\/understanding-colors-and-styles-in-terminal\/","datePublished": "2021-10-22T00:14:48+05:30","dateModified": "2021-10-23T14:41:36+05:30","description": "Eye Donation – a gift of beauty, a return for Eternity"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https:\/\/blog.dtan13.me"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Terminal",
+            "item": "https://blog.dtan13.me/categories/terminal/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Understanding Colors and Styles in Terminal"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Blog - DTan13" class="header-logo logo-svg">DTan13</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/" title="Posts"> Posts </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags"> Tags </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories"> Categories </a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank"> About </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+        </div>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="Blog - DTan13" class="header-logo">DTan13</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="Posts">Posts</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags">Tags</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories">Categories</a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank">About</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <span class="svg-icon icon-moon"></span>
+                </a></div>
+        </div>
+    </div></header><main class="main">
+<div class="container content-article page-toc theme-wide"><div class="toc" id="toc-auto">
+            <div class="toc-title">Contents</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">Home </a></li><li><a href="/categories/terminal/">Terminal </a></li><li>Understanding Colors and Styles in Terminal</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">Understanding Colors and Styles in Terminal</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/terminal/"><span class="svg-icon icon-folder"></span>Terminal</a>&nbsp;<a href="/categories/linux/"><span class="svg-icon icon-folder"></span>Linux</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-10-22">22-Oct-2021</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>958 words
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>5 minutes
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-wide">
+                        <img src="/images/2021/10/01/featured-image.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>Contents</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#chalkansi-styles">chalk(ansi-styles)</a></li>
+        <li><a href="#colored">colored</a></li>
+      </ul>
+    </li>
+    <li><a href="#escape-sequences">Escape Sequences</a>
+      <ul>
+        <li><a href="#escape-character">Escape Character</a></li>
+      </ul>
+    </li>
+    <li><a href="#trying-out-colors">Trying out colors</a>
+      <ul>
+        <li><a href="#linux-and-macos">Linux and MacOS</a></li>
+        <li><a href="#windows">Windows</a></li>
+      </ul>
+    </li>
+    <li><a href="#programming-languages">Programming Languages</a></li>
+    <li><a href="#more-colors">More Colors</a>
+      <ul>
+        <li><a href="#foregroundtext-color">Foreground(Text color)</a></li>
+        <li><a href="#background">Background</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-colors-using-rgb">Custom colors using <strong>RGB</strong></a>
+      <ul>
+        <li><a href="#forground">Forground</a></li>
+        <li><a href="#background-1">Background</a></li>
+      </ul>
+    </li>
+    <li><a href="#styles">Styles</a></li>
+    <li><a href="#complex-styles">Complex Styles</a></li>
+    <li><a href="#problems">Problems</a>
+      <ul>
+        <li><a href="#linux">Linux</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                    </div><div style="margin: 20px 0 20px 0;">
+                        <span class="post-update">
+                            <span class="s">Updated on 23-Oct-2021</span>
+                        </span>
+                    </div><!-- Add Summary Here -->
+<p>Learn to easily output colors in terminal.</p>
+<p>While using commands like <strong>htop</strong> or learning <strong>Node.JS</strong>, you might have come across colored and animated text in terminal. In this article we will have a deeper look at making your terminal and CLI script colorful.</p>
+<h2 id="introduction" class="headerLink"><a href="#introduction" class="header-mark"></a>Introduction</h2><p>There are many popular libraries providing a way to output colored text in terminal like <strong>chalk</strong> for <strong>Node.JS</strong> and <strong>coloured</strong> for <strong>Python</strong>. Before trying to understand on our own let&rsquo;s see how these libraries are doing it.</p>
+<h3 id="chalkansi-styles" class="headerLink"><a href="#chalkansi-styles" class="header-mark"></a>chalk(ansi-styles)</h3><p>The famous <a href="https://github.com/chalk/chalk" target="_blank" rel="noopener noreffer"><strong>chalk</strong></a> library in turn depends on <a href="https://github.com/chalk/ansi-styles" target="_blank" rel="noopener noreffer"><strong>ansi-styles</strong></a>. Getting a little deeper in <a href="https://github.com/chalk/ansi-styles/blob/main/index.js" target="_blank" rel="noopener noreffer"><strong>code</strong></a> on github you will come across these <a href="https://github.com/chalk/ansi-styles/blob/main/index.js#L1" target="_blank" rel="noopener noreffer">lines</a> :</p>
+<pre><code class="language-js">const wrapAnsi16 =
+    (offset = 0) =&gt;
+    (code) =&gt;
+        `\u001B[${code + offset}m`;
+
+const wrapAnsi256 =
+    (offset = 0) =&gt;
+    (code) =&gt;
+        `\u001B[${38 + offset};5;${code}m`;
+
+const wrapAnsi16m =
+    (offset = 0) =&gt;
+    (red, green, blue) =&gt;
+        `\u001B[${38 + offset};2;${red};${green};${blue}m`;
+</code></pre>
+<p>Let it be there and take a look at another library.</p>
+<h3 id="colored" class="headerLink"><a href="#colored" class="header-mark"></a>colored</h3><p><a href="https://gitlab.com/dslackw/colored" target="_blank" rel="noopener noreffer"><strong>Colored</strong></a> is also a popular python module to output colored output on terminal. If we took a quick look at the code we will come across these <a href="https://gitlab.com/dslackw/colored/-/blob/master/colored/colored.py#L15" target="_blank" rel="noopener noreffer">lines</a>:</p>
+<pre><code class="language-py">class colored(object):
+
+    def __init__(self, color):
+
+        self.ESC = &quot;\x1b[&quot;
+        self.END = &quot;m&quot;
+        self.color = color
+        self.enable_windows_terminal_mode()
+</code></pre>
+<p>This are not the entire codes but these codes does not look very fancy and complicated at all and did you noticed something common?</p>
+<h2 id="escape-sequences" class="headerLink"><a href="#escape-sequences" class="header-mark"></a>Escape Sequences</h2><p>Both codes for two different libraries have two things in common, <strong>1B[</strong> and <strong>m</strong>.</p>
+<p>Here <strong>1B</strong> is a <a href="https://en.wikipedia.org/wiki/Escape_character#ASCII_escape_character" target="_blank" rel="noopener noreffer">ASCII Escape Character</a> presented either in unicode(<strong>\u001B</strong>) and hexadecimal(<strong>\x1B</strong>) form. The <strong>[</strong> (open square bracket) along with <strong>1B</strong> (escape) is also known as <a href="https://en.wikipedia.org/w/index.php?title=Control_Sequence_Introducer&amp;redirect=no" target="_blank" rel="noopener noreffer"><strong>Control Sequence Introducer</strong></a>. CSI along with a <strong>color code</strong> (ex. for red, 31 =&gt; <strong>\x1B[31m</strong>) creates an <strong>Escape Sequence</strong>. Here <strong>\x1B[31m</strong> is treated as a independent escape sequence which signals terminal to change the color of the output after <strong>m</strong> to <strong>Red</strong> and similarly for <strong>\x1B[32m</strong> to <strong>Green</strong>. See <a href="#more-colors" rel="">More colors</a> section below for other colors.</p>
+<blockquote>
+<p>Escape sequences are used to signal as an alternative interpretation of a series of characters. Just like <strong>\t</strong> is interpreted as a <strong>tab</strong>.</p>
+</blockquote>
+<p>These escape sequences working with only colors are known as <strong>ASCII escape code</strong> and are standardized. And therefore they work everywhere.</p>
+<h3 id="escape-character" class="headerLink"><a href="#escape-character" class="header-mark"></a>Escape Character</h3><p>Although in above example <strong>\x1B</strong> is used as a escape character, we can use any one of the following :</p>
+<ul>
+<li><strong>\x1B</strong></li>
+<li><strong>\u001B</strong></li>
+<li><strong>\033</strong></li>
+<li><strong>\e</strong></li>
+</ul>
+<h2 id="trying-out-colors" class="headerLink"><a href="#trying-out-colors" class="header-mark"></a>Trying out colors</h2><p>You can use any modern terminal and any programming language to output color.</p>
+<h3 id="linux-and-macos" class="headerLink"><a href="#linux-and-macos" class="header-mark"></a>Linux and MacOS</h3><p>So lets write red <strong>Hello World!</strong></p>
+<blockquote>
+<p><strong>echo</strong> is just used to print text in terminal. You can use <strong>printf</strong>.</p>
+</blockquote>
+<pre><code class="language-bash">echo &quot;\x1B[31mHello World\!&quot;
+
+#or
+
+echo &quot;\u001B[31mHello World\!&quot;
+
+# or
+
+echo &quot;\033[31mHello World\!&quot;
+
+#or
+
+echo &quot;\e[31mHello World\!&quot;
+</code></pre>
+<p>All these commands results in same output :
+<br>
+<div id="id-1">Hello World!</div></p>
+<p>For further article I am using <strong>\e</strong> for simplicity. But remember that <strong>\e</strong> might not work with programming languages.</p>
+<h3 id="windows" class="headerLink"><a href="#windows" class="header-mark"></a>Windows</h3><p>For versions before Windows 10, the Windows command prompt does not support output coloring by default. You could install either <a href="https://cmder.net/" target="_blank" rel="noopener noreffer">Cmder</a>, <a href="https://conemu.github.io/" target="_blank" rel="noopener noreffer">ConEmu</a> or <a href="https://mintty.github.io/" target="_blank" rel="noopener noreffer">Mintty</a> to add coloring support to your Windows command console.</p>
+<p>It turns out that the support was added after Windows 10 build 16257. You can see <a href="https://superuser.com/questions/413073/windows-console-with-ansi-colors-handling" target="_blank" rel="noopener noreffer">this stackoverflow question</a> for further steps and <a href="https://practicalpowershell.com/add-a-bit-of-color-to-powershell/" target="_blank" rel="noopener noreffer">add color to powershell</a>.</p>
+<h2 id="programming-languages" class="headerLink"><a href="#programming-languages" class="header-mark"></a>Programming Languages</h2><p>In above example <strong>echo</strong> is used for printing out text to terminal. You can also use above expression with code in any programming language like <strong>python</strong>, <strong>js</strong> and <strong>c++</strong>.</p>
+<p>Fire up python IDLE or Node REPL, and with type following code :</p>
+<pre><code class="language-py">print(&quot;\x1B[31mHello World\!&quot;)
+</code></pre>
+<p>OR</p>
+<pre><code class="language-js">console.log(&quot;\x1B[31mHello World!&quot;);
+</code></pre>
+<p>You will get the usual output :
+<br>
+<div id="id-2">Hello World!</div></p>
+<blockquote>
+<p><strong>\e</strong> might not work with programming languages.</p>
+</blockquote>
+<h2 id="more-colors" class="headerLink"><a href="#more-colors" class="header-mark"></a>More Colors</h2><p>For more colors you can try changing <strong>31</strong> to something else.</p>
+<h3 id="foregroundtext-color" class="headerLink"><a href="#foregroundtext-color" class="header-mark"></a>Foreground(Text color)</h3><p>For foreground we have folllowing options :</p>
+<pre><code class="language-bash">echo &quot;\e[${Code}mHello World\!&quot;
+
+# example
+
+echo &quot;\e[35mHii There\!&quot;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Color</th>
+<th style="text-align:center">Code</th>
+<th style="text-align:center">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Black</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center"><div id="id-3">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Red</td>
+<td style="text-align:center">31</td>
+<td style="text-align:center"><div id="id-4">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Green</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center"><div id="id-5">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Yellow</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center"><div id="id-6">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Blue</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center"><div id="id-7">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Magenta</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center"><div id="id-8">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Cyan</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center"><div id="id-9">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">White</td>
+<td style="text-align:center">37</td>
+<td style="text-align:center"><div id="id-10">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Default</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center"><div id="id-11">Hello World!</div></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>I have considered <strong>Default</strong> as White.</p>
+</blockquote>
+<h3 id="background" class="headerLink"><a href="#background" class="header-mark"></a>Background</h3><p>For background we have folllowing options :</p>
+<pre><code class="language-bash">echo &quot;\e[${Code}mHello World\!&quot;
+
+# example
+
+echo &quot;\e[45mHii There\!&quot;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Color</th>
+<th style="text-align:center">Code</th>
+<th style="text-align:center">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Black</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center"><div id="id-12">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Red</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center"><div id="id-13">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Green</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center"><div id="id-14">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Yellow</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center"><div id="id-15">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Blue</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center"><div id="id-16">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Magenta</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center"><div id="id-17">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Cyan</td>
+<td style="text-align:center">46</td>
+<td style="text-align:center"><div id="id-18">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">White</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center"><div id="id-19">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Default</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">Hello World!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="custom-colors-using-rgb" class="headerLink"><a href="#custom-colors-using-rgb" class="header-mark"></a>Custom colors using <strong>RGB</strong></h2><h3 id="forground" class="headerLink"><a href="#forground" class="header-mark"></a>Forground</h3><p>The format for setting up custom foreground colors using RGB values :</p>
+<pre><code class="language-bash">echo &quot;\e[38:2:${R_value}:${G_value}:${B_value}mHello World\!&quot;
+</code></pre>
+<p>For example</p>
+<pre><code class="language-bash">echo &quot;\e[38:2:247:7:59mHello World\!&quot;
+</code></pre>
+<p>Output :
+<div id="id-20">Hello World!</div></p>
+<h3 id="background-1" class="headerLink"><a href="#background-1" class="header-mark"></a>Background</h3><p>The format for setting up custom background colors using RGB values :</p>
+<pre><code class="language-bash">echo &quot;\e[48:2:${R_value}:${G_value}:${B_value}mHello World\!&quot;
+</code></pre>
+<p>For example</p>
+<pre><code class="language-bash">echo &quot;\e[48:2:247:7:59mHello World\!&quot;
+</code></pre>
+<p>Output :
+<div id="id-21">Hello World!</div></p>
+<h2 id="styles" class="headerLink"><a href="#styles" class="header-mark"></a>Styles</h2><p>There are some styles like</p>
+<ul>
+<li><div id="id-22">underline</div></li>
+<li><strong>bold</strong></li>
+<li><em>italics</em></li>
+</ul>
+<p>The format for applying styles is same as for colors,</p>
+<pre><code class="language-bash">echo &quot;\e[${code}mHello World\!&quot;
+</code></pre>
+<p>For example :</p>
+<pre><code class="language-bash">echo &quot;\e[4mHello World\!&quot;
+</code></pre>
+<p>Output :
+<div id="id-23">Hello World!</div></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Color</th>
+<th style="text-align:center">Code</th>
+<th style="text-align:center">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Normal (default)</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">Hello World!</td>
+</tr>
+<tr>
+<td style="text-align:left">Bold</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"><div id="id-24">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Faint</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><div id="id-25">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Italics</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center"><div id="id-26">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Underline</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><div id="id-27">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Blink</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center"><span class="blink">Hello World!</span></td>
+</tr>
+<tr>
+<td style="text-align:left">Inverse</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center"><div id="id-28">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Invisible</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"><div id="id-29">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Strikethrough</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center"><div id="id-30">Hello World!</div></td>
+</tr>
+<tr>
+<td style="text-align:left">Double Underline</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center"><div id="id-31">Hello World!</div></td>
+</tr>
+</tbody>
+</table>
+<h2 id="complex-styles" class="headerLink"><a href="#complex-styles" class="header-mark"></a>Complex Styles</h2><p>For more complex styles you can add multiple styles to make a new one. Some simle examples:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Expression</th>
+<th style="text-align:center">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>echo &ldquo;\e[42m\e[31m\e[5mError!&quot;</strong></td>
+<td style="text-align:center"><div id="id-32"><span class="blink">Error!</span></div></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>echo &ldquo;\e[31mLine 43:21 : \e[33mWARN\e[0m Problem&rdquo;</strong></td>
+<td style="text-align:center"><div id="id-33">Line 43:21 :</div> <div id="id-34">WARN</div> Problem</td>
+</tr>
+</tbody>
+</table>
+<p>Just understand the <code>\</code> after <code>m</code> in some cases.</p>
+<h2 id="problems" class="headerLink"><a href="#problems" class="header-mark"></a>Problems</h2><h3 id="linux" class="headerLink"><a href="#linux" class="header-mark"></a>Linux</h3><ul>
+<li>If colors are not rendering properly you should check the value of shell variable <strong>$TERM</strong>. If it is something other them <strong>xterm</strong> or <strong>xterm-256color</strong>, set it to <strong>xterm-256color</strong> in your <strong>~/.bashrc</strong> or <strong>~/.zshrc</strong>.</li>
+</ul>
+<pre><code class="language-bash">export TERM=xterm-256color
+</code></pre>
+<br/>
+<p><strong>If you have any problem. Let me know in the comments section.</strong></p>
+<!-- Custom CSS -->
+<style>
+@keyframes blinking {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+    }
+    .blink {
+    animation: blinking 1s infinite;
+    }
+</style></div><footer>
+                        <div class="post">
+
+
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal" data-via="_DTan13_" data-hashtags="colors,shell,terminal,zsh"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-hashtag="colors"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-whatsapp" href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal" data-web><span class="svg-social-icon icon-whatsapp"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pinterest" href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-description="Eye Donation – a gift of beauty, a return for Eternity" data-image="/images/2021/10/01/featured-image.png"><span class="svg-social-icon icon-pinterest"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-tumblr" href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal" data-caption="Eye Donation – a gift of beauty, a return for Eternity" data-tags="colors,shell,terminal,zsh"><span class="svg-social-icon icon-tumblr"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pocket" href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/"><span class="svg-social-icon icon-pocket"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-flipboard" href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal"><span class="svg-social-icon icon-flipboard"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-blogger" href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal" data-description="Eye Donation – a gift of beauty, a return for Eternity"><span class="svg-social-icon icon-blogger"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-skype" href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal"><span class="svg-social-icon icon-skype"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-trello" href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal" data-description="Eye Donation – a gift of beauty, a return for Eternity"><span class="svg-social-icon icon-trello"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-hackernews" href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/" data-title="Understanding Colors and Styles in Terminal"><span class="svg-social-icon icon-hacker-news"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/colors/" class="tag">colors</a><a href="/tags/shell/" class="tag">shell</a><a href="/tags/terminal/" class="tag">terminal</a><a href="/tags/zsh/" class="tag">zsh</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span>&nbsp;<span class="license">Dhananjay Tanpure</span></div>
+        </div>
+    </footer></div>
+
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/css/b8a2d8.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["DTan13"],"clientID":"50369ddf8e4c9ad319b1","clientSecret":"d7c91e37cd6074c34adb794e0281d1888645e9d8","id":"2021-10-22T00:14:48+05:30","owner":"DTan13","repo":"blog.dtan13.tech.comments","title":"Understanding Colors and Styles in Terminal"}}};</script><script src="/js/theme.min.js"></script></body>
+</html>

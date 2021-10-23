@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Terminal - Category - Blog - DTan13</title>
+        <link>https://blog.dtan13.me/categories/terminal/</link>
+        <description>Terminal - Category - Blog - DTan13</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.me/categories/terminal/" rel="self" type="application/rss+xml" /><item>
+    <title>Understanding Colors and Styles in Terminal</title>
+    <link>https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/</link>
+    <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
+    <author>Dhananjay Tanpure</author>
+    <guid>https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/2021/10/01/featured-image.png" referrerpolicy="no-referrer">
+            </div><!-- Add Summary Here -->
+<p>Learn to easily output colors in terminal.</p>]]></description>
+</item></channel>
+</rss>
