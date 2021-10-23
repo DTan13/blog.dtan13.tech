@@ -16,8 +16,8 @@ categories: []
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "/images/{{ replace .Name "_" "-" }}/featured-image.png"
-featuredImagePreview: "/images/{{ replace .Name "_" "-" }}/featured-image.png"
+featuredImage: "/images/POST_YEAR/POST_MONTH/POST_NUMBER/featured-image.png"
+featuredImagePreview: "/images/POST_YEAR/POST_MONTH/POST_NUMBER/featured-image.png"
 
 theme: "wide"
 

@@ -5,6 +5,7 @@ theme = 'uBlogger'
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
+ignoreErrors = ["error-remote-getjson"]
 
 [[menu.main]]
 identifier = 'posts'
