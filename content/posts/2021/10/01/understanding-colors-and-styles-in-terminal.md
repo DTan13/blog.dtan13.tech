@@ -1,15 +1,15 @@
 ---
 title: "Understanding Colors and Styles in Terminal"
-subtitle: ""
+subtitle: "Life is really bland without colors, doesn't it?"
 date: 2021-10-22T00:14:48+05:30
 draft: false
 
 author: "Dhananjay Tanpure"
 authorLink: "https://github.com/DTan13"
 authorComment: ""
-description: "Eye Donation – a gift of beauty, a return for Eternity"
+description: "This post shows how to easily print colored text and styles to terminal."
 
-tags: ["colors", "shell", "terminal", "zsh"]
+tags: ["colors", "shell", "terminal", "bash", "linux"]
 categories: ["Terminal", "Linux"]
 
 hiddenFromHomePage: false
@@ -29,7 +29,7 @@ lightgallery: false
 
 <!-- Add Summary Here -->
 
-Learn to easily output colors in terminal.
+Learn to easily print colored text and styles in terminal.
 
 <!--more-->
 

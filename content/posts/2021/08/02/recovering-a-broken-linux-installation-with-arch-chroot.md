@@ -1,11 +1,11 @@
 ---
 title: "Recovering a Broken Linux Installation With Chroot"
-subtitle: ""
+subtitle: "I hate Windows!"
 date: 2021-08-25T17:53:04+05:30
 draft: false
 author: "Dhananjay Tanpure"
 authorLink: "https://github.com/DTan13"
-description: "I hate Windows!"
+description: "This post shows how to use chroot to recover a broken linux installation."
 
 tags: ["chroot", "grub", "linux", "error", "recovery"]
 categories: ["Linux"]

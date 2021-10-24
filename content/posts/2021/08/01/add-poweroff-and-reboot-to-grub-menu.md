@@ -1,11 +1,11 @@
 ---
 title: "Add Power Off and Reboot to Grub Menu"
-subtitle: ""
+subtitle: "A Random Necessity!"
 date: 2021-08-04T22:43:02+05:30
 draft: false
 author: "Dhananjay Tanpure"
 authorLink: "https://github.com/DTan13"
-description: "A Random Necessity!"
+description: "This post shows how to add Power Off and Reboot options to grub menu."
 
 tags: ["linux", "grub"]
 categories: ["Linux"]
