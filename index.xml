@@ -14,7 +14,7 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/10/01/featured-image.png" referrerpolicy="no-referrer">
             </div><!-- Add Summary Here -->
-<p>Learn to easily output colors in terminal.</p>]]></description>
+<p>Learn to easily print colored text and styles in terminal.</p>]]></description>
 </item><item>
     <title>Recovering a Broken Linux Installation With Chroot</title>
     <link>https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>

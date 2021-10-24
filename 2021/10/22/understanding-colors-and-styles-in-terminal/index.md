@@ -3,7 +3,7 @@
 
 <!-- Add Summary Here -->
 
-Learn to easily output colors in terminal.
+Learn to easily print colored text and styles in terminal.
 
 <!--more-->
 
