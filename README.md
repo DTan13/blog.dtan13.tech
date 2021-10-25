@@ -1,3 +1,1 @@
-# [Blog](blog.dtan13.tech)
-
-Just a Personal Blog
+# [Blog](https://blog.dtan13.tech)
