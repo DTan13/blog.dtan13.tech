@@ -1,4 +1,4 @@
-baseURL = 'https://blog.dtan13.me'
+baseURL = 'https://blog.dtan13.tech'
 languageCode = 'en-us'
 title = 'Blog - DTan13'
 theme = 'uBlogger'
@@ -68,15 +68,11 @@ pre = ''
 post = ''
 
 [params.footer]
-enable = true
-custom = ''
 hugo = false
-copyright = true
+copyright = false
 author = false
-since = 2021
-icp = ''
 # workaround for author(sorry!)
-license = 'Dhananjay Tanpure'
+license = '© 2021 Dhananjay Tanpure'
 
 [params.section]
 paginate = 20
@@ -105,7 +101,7 @@ paginate = 5
 [params.social]
 GitHub = 'dtan13'
 Linkedin = 'dtan13'
-Twitter = '_DTan13_'
+Twitter = 'DTan13_'
 Instagram = 'dtan.13'
 Facebook = ''
 Telegram = 'DTan13'
