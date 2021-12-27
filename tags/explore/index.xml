@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>explore - Tag - Blog - DTan13</title>
-        <link>https://blog.dtan13.me/tags/explore/</link>
+        <link>https://blog.dtan13.tech/tags/explore/</link>
         <description>explore - Tag - Blog - DTan13</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.me/tags/explore/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.tech/tags/explore/" rel="self" type="application/rss+xml" /><item>
     <title>Exploring Markdown Syntax of LoveIt</title>
-    <link>https://blog.dtan13.me/2021/06/01/exploring-markdown-syntax/</link>
+    <link>https://blog.dtan13.tech/2021/06/01/exploring-markdown-syntax/</link>
     <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
     <author>Dhananjay Tanpure</author>
-    <guid>https://blog.dtan13.me/2021/06/01/exploring-markdown-syntax/</guid>
+    <guid>https://blog.dtan13.tech/2021/06/01/exploring-markdown-syntax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/06/01/featured-image.png" referrerpolicy="no-referrer">
             </div><p>This post is for exploring markdown syntax, built-in and extended shortcodes of <strong>LoveIt</strong> theme.</p>]]></description>

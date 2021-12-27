@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>git - Tag - Blog - DTan13</title>
+        <link>https://blog.dtan13.tech/tags/git/</link>
+        <description>git - Tag - Blog - DTan13</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.tech/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>SSH and GPG With Gitpod</title>
+    <link>https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/</link>
+    <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
+    <author>Dhananjay Tanpure</author>
+    <guid>https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/2021/12/01/featured-image.png" referrerpolicy="no-referrer">
+            </div><!-- Add Summary Here -->
+<p>Add <strong>.gitconfig</strong>, <strong>GPG</strong> and <strong>SSH</strong> keys to your <strong>Gitpod</strong> Environment.</p>]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>SSH and GPG With Gitpod | </title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+<meta name="twitter:title" content="SSH and GPG With Gitpod"/>
+<meta name="twitter:description" content="Add .gitconfig, GPG and SSH keys to your Gitpod Environment."/><meta name="twitter:creator" content="@DTan13_"/><meta name="Description" content="Add .gitconfig, GPG and SSH keys to your Gitpod Environment."><meta property="og:title" content="SSH and GPG With Gitpod" />
+<meta property="og:description" content="Add .gitconfig, GPG and SSH keys to your Gitpod Environment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-27T21:49:36+05:30" />
+<meta property="article:modified_time" content="2021-12-27T22:42:24+05:30" />
+
+<meta name="application-name" content="DTan13">
+<meta name="apple-mobile-web-app-title" content="DTan13"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SSH and GPG With Gitpod",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.dtan13.tech\/2021\/12\/27\/ssh-and-gpg-with-gitpod\/"
+        },"genre": "posts","keywords": "gitpod, ssh, gpg, git","wordCount":  290 ,
+        "url": "https:\/\/blog.dtan13.tech\/2021\/12\/27\/ssh-and-gpg-with-gitpod\/","datePublished": "2021-12-27T21:49:36+05:30","dateModified": "2021-12-27T22:42:24+05:30","description": "Add .gitconfig, GPG and SSH keys to your Gitpod Environment."
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https:\/\/blog.dtan13.tech"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "git",
+            "item": "https://blog.dtan13.tech/categories/git/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "SSH and GPG With Gitpod"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Blog - DTan13" class="header-logo logo-svg">DTan13</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/" title="Posts"> Posts </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags"> Tags </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories"> Categories </a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank"> About </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+        </div>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="Blog - DTan13" class="header-logo">DTan13</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="Posts">Posts</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="Tags">Tags</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="Categories">Categories</a>
+                        </li><li>
+                            <a class="menu-item" href="https://dtan13.tech" title="About" rel="noopener noreffer" target="_blank">About</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <span class="svg-icon icon-moon"></span>
+                </a></div>
+        </div>
+    </div></header><main class="main">
+<div class="container content-article page-toc theme-wide"><div class="toc" id="toc-auto">
+            <div class="toc-title">Contents</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">Home </a></li><li><a href="/categories/git/">git </a></li><li>SSH and GPG With Gitpod</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">SSH and GPG With Gitpod</h1><h2 class="single-subtitle">Add .gitconfig, GPG and SSH keys to your Gitpod Environment</h2><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/git/"><span class="svg-icon icon-folder"></span>git</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-12-27">27-Dec-2021</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>290 words
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>2 minutes
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-wide">
+                        <img src="/images/2021/12/01/featured-image.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>Contents</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#get-your-gitconfig">Get Your <strong>.gitconfig</strong></a></li>
+    <li><a href="#make-commits-gpg-signed">Make commits GPG-signed</a></li>
+    <li><a href="#ssh-github-and-gitlab-from-gitpod">SSH Github and Gitlab from gitpod</a></li>
+    <li><a href="#thank-you">Thank You!</a></li>
+  </ul>
+</nav></div>
+                    </div><!-- Add Summary Here -->
+<p>Add <strong>.gitconfig</strong>, <strong>GPG</strong> and <strong>SSH</strong> keys to your <strong>Gitpod</strong> Environment.</p>
+<h1 id="ssh-and-gpg-with-gitpod" class="headerLink"><a href="#ssh-and-gpg-with-gitpod" class="header-mark"></a>SSH and GPG with Gitpod</h1><h2 id="get-your-gitconfig" class="headerLink"><a href="#get-your-gitconfig" class="header-mark"></a>Get Your <strong>.gitconfig</strong></h2><ol>
+<li>Your Git Config is located at <strong>~/.gitconfig</strong></li>
+<li>Encode the File with base64:</li>
+</ol>
+<pre><code class="language-bash">cat .gitconfig | base64 -w 0
+</code></pre>
+<ol start="3">
+<li>
+<p><a href="https://gitpod.io/variables" target="_blank" rel="noopener noreffer">Create a variable</a> on gitpod.</p>
+<ul>
+<li>Enter Name <strong>GITCONFIG</strong>.</li>
+<li>Enter output of previous command as Value.</li>
+</ul>
+</li>
+<li>
+<p>Add following task to your <strong>.gitpod.yml</strong>:</p>
+</li>
+</ol>
+<pre><code class="language-yml">tasks:
+    - before: &gt;
+          [[ ! -z $GITCONFIG  ]] &amp;&amp;
+          echo $GITCONFIG | base64 -d &gt; ~/.gitconfig &amp;&amp;
+          chmod 644 ~/.gitconfig
+</code></pre>
+<h2 id="make-commits-gpg-signed" class="headerLink"><a href="#make-commits-gpg-signed" class="header-mark"></a>Make commits GPG-signed</h2><ol>
+<li>
+<p>To sign commit using GPG you must first add GPG keys to Github and/or Gitlab.</p>
+<ul>
+<li><a href="https://docs.github.com/en/authentication/managing-commit-signature-verification" target="_blank" rel="noopener noreffer">For Github</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/" target="_blank" rel="noopener noreffer">For Gitlab</a></li>
+</ul>
+</li>
+<li>
+<p>Your GPG Keys are stored in <strong>~/.gnupg</strong> folder. Encode this folder with base64.</p>
+</li>
+</ol>
+<pre><code class="language-bash">tar -czf - ~/.gnupg | base64 -w 0
+</code></pre>
+<ol start="3">
+<li><a href="https://gitpod.io/variables" target="_blank" rel="noopener noreffer">Create a variable</a> on gitpod.
+<ul>
+<li>Enter Name <strong>GNUPG</strong>.</li>
+<li>Enter output of previous command in Value.</li>
+</ul>
+</li>
+<li>Add following task to your <strong>.gitpod.yml</strong>:</li>
+</ol>
+<pre><code class="language-yml">tasks:
+    - before: &gt;
+          [[ ! -z $GNUPG  ]] &amp;&amp;
+          cd ~ &amp;&amp;
+          rm -rf .gnupg &amp;&amp;
+          echo $GNUPG | base64 -d | tar --no-same-owner -xzf -
+</code></pre>
+<h2 id="ssh-github-and-gitlab-from-gitpod" class="headerLink"><a href="#ssh-github-and-gitlab-from-gitpod" class="header-mark"></a>SSH Github and Gitlab from gitpod</h2><ol>
+<li>
+<p>Add SSH Keys to Github and/or Gitlab</p>
+<ul>
+<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" target="_blank" rel="noopener noreffer">For Github</a></li>
+<li><a href="https://docs.gitlab.com/ee/ssh/" target="_blank" rel="noopener noreffer">For Gitlab</a></li>
+</ul>
+</li>
+<li>
+<p>Get your SSH Public Key from <strong>id_rsa.pub</strong>:</p>
+<ul>
+<li><a href="https://gitpod.io/variables" target="_blank" rel="noopener noreffer">Create a variable</a> on gitpod.</li>
+<li>Enter Name <strong>SSH_PUBLIC_KEY</strong>.</li>
+<li>Paste the contents of file in Value.</li>
+</ul>
+</li>
+<li>
+<p>Get your SSH Public Key from <strong>id_rsa</strong>:</p>
+<ul>
+<li><a href="https://gitpod.io/variables" target="_blank" rel="noopener noreffer">Create a variable</a> on gitpod.</li>
+<li>Enter Name <strong>SSH_PRIVATE_KEY</strong>.</li>
+<li>Encode the File <strong>id_rsa</strong> with base64.</li>
+</ul>
+<pre><code class="language-bash">cat id_rsa | base64 -w 0
+</code></pre>
+<ul>
+<li>Paste the output of previous command in Value.</li>
+</ul>
+</li>
+<li>
+<p>Add Following tasks to your <strong>.gitpod.yml</strong>:</p>
+</li>
+</ol>
+<pre><code class="language-yml">tasks:
+    - before: &gt;
+          mkdir -p ~/.ssh &amp;&amp;
+          [[ ! -z $SSH_PUBLIC_KEY  ]] &amp;&amp;
+          echo $SSH_PUBLIC_KEY &gt; ~/.ssh/id_rsa.pub &amp;&amp;
+          chmod 644 ~/.ssh/id_rsa.pub &amp;&amp;
+          [[ ! -z $SSH_PRIVATE_KEY  ]] &amp;&amp;
+          echo $SSH_PRIVATE_KEY | base64 -d &gt; ~/.ssh/id_rsa &amp;&amp;
+          chmod 600 ~/.ssh/id_rsa
+</code></pre>
+<h2 id="thank-you" class="headerLink"><a href="#thank-you" class="header-mark"></a>Thank You!</h2></div><footer>
+                        <div class="post">
+
+
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod" data-via="DTan13_" data-hashtags="gitpod,ssh,gpg,git"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-hashtag="gitpod"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-whatsapp" href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod" data-web><span class="svg-social-icon icon-whatsapp"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pinterest" href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-description="Add .gitconfig, GPG and SSH keys to your Gitpod Environment." data-image="/images/2021/12/01/featured-image.png"><span class="svg-social-icon icon-pinterest"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-tumblr" href="javascript:void(0);" title="Share on Tumblr" data-sharer="tumblr" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod" data-caption="Add .gitconfig, GPG and SSH keys to your Gitpod Environment." data-tags="gitpod,ssh,gpg,git"><span class="svg-social-icon icon-tumblr"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-pocket" href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/"><span class="svg-social-icon icon-pocket"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-flipboard" href="javascript:void(0);" title="Share on Flipboard" data-sharer="flipboard" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod"><span class="svg-social-icon icon-flipboard"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-blogger" href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod" data-description="Add .gitconfig, GPG and SSH keys to your Gitpod Environment."><span class="svg-social-icon icon-blogger"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-skype" href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod"><span class="svg-social-icon icon-skype"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-trello" href="javascript:void(0);" title="Share on Trello" data-sharer="trello" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod" data-description="Add .gitconfig, GPG and SSH keys to your Gitpod Environment."><span class="svg-social-icon icon-trello"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-hackernews" href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/" data-title="SSH and GPG With Gitpod"><span class="svg-social-icon icon-hacker-news"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/gitpod/" class="tag">gitpod</a><a href="/tags/ssh/" class="tag">ssh</a><a href="/tags/gpg/" class="tag">gpg</a><a href="/tags/git/" class="tag">git</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">&nbsp;<span class="license">© 2021 Dhananjay Tanpure</span></div>
+        </div>
+    </footer></div>
+
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["DTan13"],"clientID":"50369ddf8e4c9ad319b1","clientSecret":"d7c91e37cd6074c34adb794e0281d1888645e9d8","id":"2021-12-27T21:49:36+05:30","owner":"DTan13","repo":"blog.dtan13.tech.comments","title":"SSH and GPG With Gitpod"}}};</script><script src="/js/theme.min.js"></script></body>
+</html>

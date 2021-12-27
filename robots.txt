@@ -114,4 +114,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://blog.dtan13.me/sitemap.xml
+Sitemap: https://blog.dtan13.tech/sitemap.xml

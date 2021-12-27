@@ -1,34 +1,34 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Linux - Category - Blog - DTan13</title>
-        <link>https://blog.dtan13.me/categories/linux/</link>
+        <link>https://blog.dtan13.tech/categories/linux/</link>
         <description>Linux - Category - Blog - DTan13</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.me/categories/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.tech/categories/linux/" rel="self" type="application/rss+xml" /><item>
     <title>Understanding Colors and Styles in Terminal</title>
-    <link>https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/</link>
+    <link>https://blog.dtan13.tech/2021/10/22/understanding-colors-and-styles-in-terminal/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Dhananjay Tanpure</author>
-    <guid>https://blog.dtan13.me/2021/10/22/understanding-colors-and-styles-in-terminal/</guid>
+    <guid>https://blog.dtan13.tech/2021/10/22/understanding-colors-and-styles-in-terminal/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/10/01/featured-image.png" referrerpolicy="no-referrer">
             </div><!-- Add Summary Here -->
 <p>Learn to easily print colored text and styles in terminal.</p>]]></description>
 </item><item>
     <title>Recovering a Broken Linux Installation With Chroot</title>
-    <link>https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
+    <link>https://blog.dtan13.tech/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</link>
     <pubDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</pubDate>
     <author>Dhananjay Tanpure</author>
-    <guid>https://blog.dtan13.me/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
+    <guid>https://blog.dtan13.tech/2021/08/25/recovering-a-broken-linux-installation-with-arch-chroot/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/02/featured-image.png" referrerpolicy="no-referrer">
             </div><!-- Add Summary Here -->
 <p>How to use <strong>chroot</strong> to recover broken linux installation.</p>]]></description>
 </item><item>
     <title>Add Power Off and Reboot to Grub Menu</title>
-    <link>https://blog.dtan13.me/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</link>
+    <link>https://blog.dtan13.tech/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</link>
     <pubDate>Wed, 04 Aug 2021 22:43:02 &#43;0530</pubDate>
     <author>Dhananjay Tanpure</author>
-    <guid>https://blog.dtan13.me/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</guid>
+    <guid>https://blog.dtan13.tech/2021/08/04/add-poweroff-and-reboot-to-grub-menu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/2021/08/01/featured-image.jpg" referrerpolicy="no-referrer">
             </div><p>This post shows how to add <strong>Power Off</strong> and <strong>Reboot</strong> to grub menu.</p>]]></description>
