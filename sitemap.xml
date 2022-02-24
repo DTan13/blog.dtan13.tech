@@ -2,16 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.dtan13.tech/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/categories/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/tags/git/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/categories/git/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/tags/gitpod/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/tags/gpg/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/posts/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/tags/ssh/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.dtan13.tech/tags/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.dtan13.tech/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/categories/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/tags/git/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/categories/git/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/tags/gitpod/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/tags/gpg/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/posts/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/tags/ssh/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/2021/12/27/ssh-and-gpg-with-gitpod/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.dtan13.tech/tags/</loc><lastmod>2021-12-27T22:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.dtan13.tech/tags/bash/</loc><lastmod>2021-10-24T20:30:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.dtan13.tech/tags/colors/</loc><lastmod>2021-10-24T20:30:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.dtan13.tech/categories/linux/</loc><lastmod>2021-10-24T20:30:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
