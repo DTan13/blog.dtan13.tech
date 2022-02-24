@@ -72,7 +72,7 @@ hugo = false
 copyright = false
 author = false
 # workaround for author(sorry!)
-license = '© 2021 Dhananjay Tanpure'
+license = '© 2021 - 2022 Dhananjay Tanpure'
 
 [params.section]
 paginate = 20
@@ -101,8 +101,7 @@ paginate = 5
 [params.social]
 GitHub = 'dtan13'
 Linkedin = 'dtan13'
-Twitter = 'DTan13_'
-Instagram = 'dtan.13'
+Twitter = 'DTan13dottech'
 Facebook = ''
 Telegram = 'DTan13'
 Medium = ''
