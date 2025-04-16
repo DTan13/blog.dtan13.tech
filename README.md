@@ -1,1 +1,1 @@
-# [Blog](https://blog.dtan13.tech)
+# [Blog](https://blog.dtan13.in)
