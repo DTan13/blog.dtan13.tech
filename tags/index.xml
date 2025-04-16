@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Blog - DTan13</title>
-        <link>https://blog.dtan13.tech/tags/</link>
+        <link>http://blog.dtan13.in/tags/</link>
         <description>Tags - Tag - Blog - DTan13</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.tech/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</lastBuildDate><atom:link href="http://blog.dtan13.in/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Git</title>
-    <link>https://blog.dtan13.tech/tags/git/</link>
+    <link>http://blog.dtan13.in/tags/git/</link>
     <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/git/</guid>
+    <guid>http://blog.dtan13.in/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Gitpod</title>
-    <link>https://blog.dtan13.tech/tags/gitpod/</link>
+    <link>http://blog.dtan13.in/tags/gitpod/</link>
     <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/gitpod/</guid>
+    <guid>http://blog.dtan13.in/tags/gitpod/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Gpg</title>
-    <link>https://blog.dtan13.tech/tags/gpg/</link>
+    <link>http://blog.dtan13.in/tags/gpg/</link>
     <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/gpg/</guid>
+    <guid>http://blog.dtan13.in/tags/gpg/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Ssh</title>
-    <link>https://blog.dtan13.tech/tags/ssh/</link>
+    <link>http://blog.dtan13.in/tags/ssh/</link>
     <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/ssh/</guid>
+    <guid>http://blog.dtan13.in/tags/ssh/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Bash</title>
-    <link>https://blog.dtan13.tech/tags/bash/</link>
+    <link>http://blog.dtan13.in/tags/bash/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/bash/</guid>
+    <guid>http://blog.dtan13.in/tags/bash/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Colors</title>
-    <link>https://blog.dtan13.tech/tags/colors/</link>
+    <link>http://blog.dtan13.in/tags/colors/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/colors/</guid>
+    <guid>http://blog.dtan13.in/tags/colors/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Linux</title>
-    <link>https://blog.dtan13.tech/tags/linux/</link>
+    <link>http://blog.dtan13.in/tags/linux/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/linux/</guid>
+    <guid>http://blog.dtan13.in/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Shell</title>
-    <link>https://blog.dtan13.tech/tags/shell/</link>
+    <link>http://blog.dtan13.in/tags/shell/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/shell/</guid>
+    <guid>http://blog.dtan13.in/tags/shell/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Terminal</title>
-    <link>https://blog.dtan13.tech/tags/terminal/</link>
+    <link>http://blog.dtan13.in/tags/terminal/</link>
     <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/terminal/</guid>
+    <guid>http://blog.dtan13.in/tags/terminal/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Chroot</title>
-    <link>https://blog.dtan13.tech/tags/chroot/</link>
+    <link>http://blog.dtan13.in/tags/chroot/</link>
     <pubDate>Wed, 25 Aug 2021 17:53:04 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://blog.dtan13.tech/tags/chroot/</guid>
+    <guid>http://blog.dtan13.in/tags/chroot/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
