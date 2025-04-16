@@ -33,4 +33,4 @@ echo "Restore changes in theme"
 cd $DIR/themes/uBlogger && git restore . && cd $DIR
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to blog.dtan13.tech" && cd ..
+cd public && git add --all && git commit -m "Publishing to blog.dtan13.in" && cd ..
