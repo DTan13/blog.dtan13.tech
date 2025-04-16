@@ -1,0 +1,29 @@
+{{- /*
+  This shortcode is flexible and accepts either:
+  1. Just a tweet ID as positional parameter: {{< tweet 877500564405444608 >}}
+  2. Named parameters user and id: {{< tweet user="username" id="877500564405444608" >}}
+*/ -}}
+
+{{- $id := "" -}}
+{{- $user := "" -}}
+
+{{- /* Handle positional parameter case */ -}}
+{{- if .IsNamedParams -}}
+  {{- $id = .Get "id" -}}
+  {{- $user = .Get "user" -}}
+{{- else -}}
+  {{- $id = .Get 0 -}}
+{{- end -}}
+
+{{- /* If ID is provided, create the Twitter embed */ -}}
+{{- if $id -}}
+<div class="twitter-tweet-container">
+  <blockquote class="twitter-tweet">
+    <a href="https://twitter.com/{{ with $user }}{{ . }}{{ end }}/status/{{ $id }}"></a>
+  </blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+{{- else -}}
+  {{- errorf "The %q shortcode requires at least the id parameter." .Name -}}
+{{- end -}}
+
