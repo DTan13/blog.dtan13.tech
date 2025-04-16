@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - Blog - DTan13</title>
+        <link>https://blog.dtan13.tech/categories/</link>
+        <description>Categories - Category - Blog - DTan13</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</lastBuildDate><atom:link href="https://blog.dtan13.tech/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Git</title>
+    <link>https://blog.dtan13.tech/categories/git/</link>
+    <pubDate>Mon, 27 Dec 2021 21:49:36 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://blog.dtan13.tech/categories/git/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Linux</title>
+    <link>https://blog.dtan13.tech/categories/linux/</link>
+    <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://blog.dtan13.tech/categories/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Terminal</title>
+    <link>https://blog.dtan13.tech/categories/terminal/</link>
+    <pubDate>Fri, 22 Oct 2021 00:14:48 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://blog.dtan13.tech/categories/terminal/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Markdown</title>
+    <link>https://blog.dtan13.tech/categories/markdown/</link>
+    <pubDate>Tue, 01 Jun 2021 21:13:11 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://blog.dtan13.tech/categories/markdown/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
